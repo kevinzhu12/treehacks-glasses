@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mistralai/mistralai": "^1.5.0",
     "dotenv": "^16.4.7",
     "fetch": "^1.1.0",
     "fs": "^0.0.1-security",

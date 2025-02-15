@@ -2,20 +2,23 @@
 
 import Sidebar from "../components/Sidebar";
 import { useState, useEffect } from "react";
-
+import { NoteContent } from "./[id]/page";
 
 export default function NotesLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [notes, setNotes] = useState<any[]>([]);
+  const [notes, setNotes] = useState<Record<string, NoteContent>>({});
 
   useEffect(() => {
-    const saved = localStorage.getItem("notes");
-    if (saved) {
-      setNotes(JSON.parse(saved));
+    async function fetchNotes() {
+      const response = await fetch("/api/notes/all");
+      const savedNotes = await response.json();
+      setNotes(savedNotes);
     }
+
+    fetchNotes();
   }, []);
 
   useEffect(() => {

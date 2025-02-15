@@ -3,32 +3,68 @@
 import { useParams } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 
+export interface NoteContent {
+  title: string;
+  body: string;
+  snapshot: string;
+  todos: string;
+  reflection: string;
+}
+
+export interface Note {
+  date: string;
+  content: NoteContent;
+}
+
 export default function NotePage() {
   const params = useParams();
   const titleRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const [note, setNote] = useState({
-    title: "Untitled",
-    content: "Start typing here...",
-    date: "",
+  const [note, setNote] = useState<Note>({
+    date: new Date().toLocaleDateString(),
+    content: {
+      title: "Untitled",
+      content: "Transcribed content",
+      snapshot: "Notes overview",
+      todos: "Things to do.",
+      reflection: "Reflection Questions",
+    },
   });
 
   useEffect(() => {
     const loadNote = () => {
-      const notes = JSON.parse(localStorage.getItem("notes") || "[]");
-      const currentNote = notes.find((n: any) => n.id === params.id);
+      async function _loadNote() {
+        const note = await (
+          await fetch("/api/notes/load?date=" + params.id)
+        ).json();
 
-      if (currentNote) {
-        setNote(currentNote);
-        if (titleRef.current) titleRef.current.textContent = currentNote.title;
-        if (contentRef.current)
-          contentRef.current.textContent = currentNote.content;
-      } else {
-        if (titleRef.current) titleRef.current.textContent = "Untitled";
-        if (contentRef.current)
-          contentRef.current.textContent = "Start typing here...";
+        console.log(note);
+
+        if (note) {
+          setNote(note);
+          // if (titleRef.current)
+          //   titleRef.current.textContent = note.content.title;
+          // if (contentRef.current)
+          //   contentRef.current.textContent = note.content.content;
+        }
       }
+
+      _loadNote();
+
+      // const notes = JSON.parse(localStorage.getItem("notes") || "[]");
+      // const currentNote = notes.find((n: any) => n.id === params.id);
+
+      // if (currentNote) {
+      //   setNote(currentNote);
+      //   if (titleRef.current) titleRef.current.textContent = currentNote.title;
+      //   if (contentRef.current)
+      //     contentRef.current.textContent = currentNote.content;
+      // } else {
+      //   if (titleRef.current) titleRef.current.textContent = "Untitled";
+      //   if (contentRef.current)
+      //     contentRef.current.textContent = "Start typing here...";
+      // }
     };
 
     loadNote();
@@ -40,18 +76,18 @@ export default function NotePage() {
     }
   };
 
-  const saveNote = () => {
-    const notes = JSON.parse(localStorage.getItem("notes") || "[]");
-    const noteIndex = notes.findIndex((n: any) => n.id === params.id);
+  // const saveNote = () => {
+  //   const notes = JSON.parse(localStorage.getItem("notes") || "[]");
+  //   const noteIndex = notes.findIndex((n: any) => n.id === params.id);
 
-    if (noteIndex >= 0) {
-      notes[noteIndex] = { ...note, id: params.id };
-    } else {
-      notes.push({ ...note, id: params.id });
-    }
+  //   if (noteIndex >= 0) {
+  //     notes[noteIndex] = { ...note, id: params.id };
+  //   } else {
+  //     notes.push({ ...note, id: params.id });
+  //   }
 
-    localStorage.setItem("notes", JSON.stringify(notes));
-  };
+  //   localStorage.setItem("notes", JSON.stringify(notes));
+  // };
 
   return (
     <main className="min-h-screen bg-[#faf9f6]">
@@ -70,7 +106,7 @@ export default function NotePage() {
                 ...prev,
                 title: target.textContent || "Untitled",
               }));
-              saveNote();
+              // saveNote();
             }
           }}
         />
@@ -91,7 +127,7 @@ export default function NotePage() {
                   ...prev,
                   content: target.textContent || "",
                 }));
-                saveNote();
+                // saveNote();
               }
             }}
             style={{
