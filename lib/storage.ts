@@ -1,13 +1,21 @@
 // lib/storage.ts
 
 import fs from "fs";
-require("fs");
+// const fs = require("fs");
 
 import path from "path";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const TRANSCRIPT_FILE = path.join(DATA_DIR, "transcripts.json");
 const NOTES_FILE = path.join(DATA_DIR, "notes.json");
+
+export interface NoteContent {
+  title: string;
+  body: string;
+  snapshot: string;
+  todos: string;
+  reflection: string;
+}
 
 // Ensure data directory exists
 if (!fs.existsSync(DATA_DIR)) {
@@ -32,15 +40,43 @@ export function getTranscripts(): string[] {
   }
 }
 
-export function getAllNotes(): Record<string, string[]> {
+// returns a mapping of dates to note names
+export function getAllNoteNames(): Record<string, string> {
   try {
-    const data = fs.readFileSync(TRANSCRIPT_FILE, "utf-8");
-    return JSON.parse(data);
+    const data = fs.readFileSync(NOTES_FILE, "utf-8");
+    const notes: Record<string, NoteContent> = JSON.parse(data);
+    return Object.entries(notes).reduce((acc, [date, note]) => {
+      acc[date] = note.title;
+      return acc;
+    }, {} as Record<string, string>);
   } catch (error) {
-    console.error("Error reading transcripts:", error);
+    console.error("Error reading notes:", error);
     return {};
   }
 }
+
+export function getNoteContent(date: string): NoteContent | null {
+  try {
+    const data = fs.readFileSync(NOTES_FILE, "utf-8");
+    const notes: Record<string, NoteContent> = JSON.parse(data);
+    return notes[date] || null;
+  } catch (error) {
+    console.error("Error reading notes:", error);
+    return null;
+  }
+}
+
+// export function getAllNotes(): Record<string, NoteContent> {
+//   try {
+//     const data = fs.readFileSync(NOTES_FILE, "utf-8");
+//     return JSON.parse(data);
+//   } catch (error) {
+//     console.error("Error reading notes:", error);
+//     return {};
+//   }
+// }
+
+export function writeNote(date: string, content: NoteContent): void {}
 
 export function saveTranscripts(chunks: string[]): void {
   try {

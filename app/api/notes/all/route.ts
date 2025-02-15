@@ -1,22 +1,25 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { getAllNoteNames } from '@/lib/storage';
 
-const NOTES_FILE = path.join(process.cwd(), 'data', 'notes.json');
+// const NOTES_FILE = path.join(process.cwd(), 'data', 'notes.json');
 
 
 // /api/notes/all -> {"10-23-2024": "Title", "10-23-2024": "Title", "10-23-2024": "Title",}
 
 export async function GET() {
     try {
-        const data = fs.readFileSync(NOTES_FILE, 'utf-8');
-        const notes = JSON.parse(data);
+        // const data = fs.readFileSync(NOTES_FILE, 'utf-8');
+        // const notes = JSON.parse(data);
 
-        // map dates to title
-        const res: Record<string, string> = {}
-        for (const date in notes) {
-            res[date] = notes[date].title;
-        }
+        // // map dates to title
+        // const res: Record<string, string> = {}
+        // for (const date in notes) {
+        //     res[date] = notes[date].title;
+        // }
+
+        const res: Record<string, string> = getAllNoteNames();
 
         return NextResponse.json(res);
     } catch (error) {

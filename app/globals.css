@@ -1,15 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* @font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-display: swap;
+  src: url("/Cormorant-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-display: swap;
+  src: url("/Cormorant-Italic-VariableFont_wght.ttf") format("truetype");
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
-
-/* .cormorant-garamond {
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+/* @font-face {
+  font-family: "Cormorant Italics";
   font-style: normal;
-} */
+  font-weight: 400;
+  src: url("")
+    format("truetype");
+  /* src: url("/../public/Cormorant/Cormorant-Italic-VariableFont.ttf") */
+/* format("truetype"); */
+/* } */
 
 :root {
   --background: #ffffff;
@@ -24,10 +41,14 @@
   }
 }
 
+h1 {
+  font-family: Helvetica, serif;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Cormorant", "Times New Roman", Arial, Helvetica, sans-serif;
+  font-family: Helvetica, serif;
 }
 
 .card {
@@ -37,5 +58,6 @@ body {
   border: 1px solid var(--foreground);
   border-radius: 0.5rem;
   padding: 1rem;
+  font-family: "Cormorant", Helvetica, serif;
   margin: 1rem;
 }
