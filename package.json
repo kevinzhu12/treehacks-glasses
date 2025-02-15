@@ -10,14 +10,18 @@
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "fetch": "^1.1.0",
+    "fs": "^0.0.1-security",
     "next": "15.1.7",
     "openai": "^4.85.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/node-fetch": "^2.6.12",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
