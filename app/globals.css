@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* .cormorant-garamond {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card-color: #e6efef;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +27,15 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cormorant", "Times New Roman", Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background: var(--card-color);
+  text-align: left;
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
 }
