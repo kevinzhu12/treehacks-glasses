@@ -71,3 +71,7 @@ body {
 .sidebar {
   background-color: #f1eee5;
 }
+
+.graph-display {
+  max-width: 80vw;
+}

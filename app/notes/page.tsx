@@ -15,7 +15,9 @@ export default function NotesHome() {
         <h2 className="text-xl font-medium text-gray-400">
           Select an entry to begin
         </h2>
-        <Graph />
+        <div className="graph-display">
+          <Graph />
+        </div>
 
         {/* Subtle arrow pointing to sidebar */}
         <div className="absolute left-24 top-1/2 transform -translate-y-1/2 text-gray-300">

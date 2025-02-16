@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import "aframe";
 
+import { buildNote } from "@/lib/notetaker";
+
 // import { getGraph } from "@/lib/storage";
 
 // import { ForceGraph3D } from "react-force-graph-3d";
@@ -32,23 +34,25 @@ const Graph = () => {
     }, [])
 
     return (
-        <>
+        <div>
             <ForceGraph3D
-            graphData={myData}
-            nodeLabel="id"
-            nodeAutoColorBy="group"
-            // onNodeClick={handleClick}
-            nodeResolution={50}
-            linkDirectionalParticles={1}
-            linkDirectionalParticleResolution={12}
-            // scene={(e) => {
-            //     console.log(e)
-            // }}
-            backgroundColor="white"
-            linkColor="black"
-            linkOpacity={1}
+                graphData={myData}
+                nodeLabel="id"
+                nodeAutoColorBy="group"
+                // onNodeClick={handleClick}
+                nodeResolution={50}
+                linkDirectionalParticles={1}
+                linkDirectionalParticleResolution={12}
+                // scene={(e) => {
+                //     console.log(e)
+                // }}
+                backgroundColor="#FAF9F6"
+                linkColor="black"
+                linkOpacity={1}
+                width = {400}
+                height = {400}
             />
-        </>
+        </div>
     );
 };
 

@@ -79,6 +79,7 @@ export const buildNote = async (
   try {
     const graph_prompt = buildGraphPrompt(cleanJSON, existingGraph);
     const graph_result = await sendMistralGraphRequest(prompt);
+    console.log(graph_result)
     const graph_nodes = getNodes(cleanJSON);
     writeNodes(graph_nodes);
     return [JSON.parse(cleanJSON), JSON.parse(graph_result)];
