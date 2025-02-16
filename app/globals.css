@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /* @font-face {
   font-family: "Cormorant";
@@ -59,7 +59,8 @@ body {
 button,
 input,
 div {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 h1 {
@@ -73,7 +74,7 @@ h1 {
   /* border: 1px solid var(--foreground); */
   /* border-radius: 0.5rem; */
   /* padding: 1rem; */
-  font-family: "PT Serif", Helvetica, serif;
+  font-family: Helvetica, serif;
   /* font-size: 1.2rem; */
   /* margin: 1rem; */
 }

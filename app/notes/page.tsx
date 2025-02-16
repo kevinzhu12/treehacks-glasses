@@ -14,7 +14,7 @@ export default function NotesHome() {
         </div>
         <div
           className="left-0 right-0 text-center"
-          style={{ zIndex: -1, fontFamily: "PT Serif, Helvetica" }}
+          style={{ zIndex: -1, fontFamily: "DM Sans, Helvetica" }}
         >
           <h1
             style={{
@@ -26,7 +26,7 @@ export default function NotesHome() {
           >
             Mirror
           </h1>
-          <p className="text-base text-gray-400 mb-12">
+          <p className="text-base text-gray-600 mb-12">
             Capture your thoughts and reflections. Select an entry to begin.
           </p>
           {/* <h2 className="text-xl font-medium text-gray-400">
