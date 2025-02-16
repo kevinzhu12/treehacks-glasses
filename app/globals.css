@@ -35,6 +35,12 @@
   --card-color: #e6efef;
 }
 
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card-color: #1a1a1a;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -42,13 +48,20 @@
   }
 }
 
-h1 {
-  font-family: Helvetica, serif;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: Helvetica, serif;
+}
+
+button,
+input,
+div {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
   font-family: Helvetica, serif;
 }
 

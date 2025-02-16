@@ -5,22 +5,14 @@ import "aframe";
 
 import { buildNote } from "@/lib/notetaker";
 
-// import { getGraph } from "@/lib/storage";
-
-// import { ForceGraph3D } from "react-force-graph-3d";
 const ForceGraph3D = dynamic(
   () => import("react-force-graph").then((mod) => mod.ForceGraph3D),
   { ssr: false }
 );
-//myData is { nodes: [], links: [] }
-
-// let myData = import
-
-// id is the title of the chunk, group is number, content is snapshot. 
-// let myData = getGraph();
 
 const Graph = () => {
     const [myData, setMyData] = useState<any>();
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
         const getGraph = async () => {
@@ -30,29 +22,53 @@ const Graph = () => {
         };
         getGraph();
 
-        console.log(myData);
-    }, [])
+        const updateDimensions = () => {
+            setDimensions({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+        
+        updateDimensions();
+        window.addEventListener('resize', updateDimensions);
+        return () => window.removeEventListener('resize', updateDimensions);
+    }, []);
+
+    if (!myData) return null;
 
     return (
-        <div>
+        // <main style={{
+        //     position: "relative",
+        //     width: "100vw",
+        //     height: "100vh",
+        //     overflow: "hidden",
+        //     textAlign: "center"
+        // }}>
+        <div style={{
+            width: "100%",
+            height: "100%",
+            textAlign: "center",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 0
+        }}>
             <ForceGraph3D
                 graphData={myData}
                 nodeLabel="id"
                 nodeAutoColorBy="group"
-                // onNodeClick={handleClick}
-                nodeResolution={50}
+                nodeResolution={100}
                 linkDirectionalParticles={1}
                 linkDirectionalParticleResolution={12}
-                // scene={(e) => {
-                //     console.log(e)
-                // }}
                 backgroundColor="#FAF9F6"
-                linkColor="black"
+                // linkColor="#000000"
+                linkVisibility={true}
                 linkOpacity={1}
-                width = {400}
-                height = {400}
+                width={dimensions.width} 
+                height={dimensions.height}
             />
         </div>
+        // </main>
     );
 };
 

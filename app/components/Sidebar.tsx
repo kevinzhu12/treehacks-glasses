@@ -59,12 +59,12 @@ export default function Sidebar({
   // Sort notes by date
   const sortedNotes = Object.entries(notes)
     .sort(([dateA], [dateB]) => 
-      new Date(dateA).getTime() - new Date(dateB).getTime()
+      new Date(dateB).getTime() - new Date(dateA).getTime()
     );
 
   return (
-    <nav className="sidebar w-64 h-screen border-r border-gray-200 fixed left-0 top-0 bg-[#faf9f6] flex flex-col">
-      <div className="p-4 border-b border-gray-200">
+    <nav style={{zIndex: 5}} className="sidebar w-64 h-screen border-r border-gray-200 dark:border-gray-700 fixed left-0 top-0 bg-[#faf9f6] dark:bg-gray-800 flex flex-col">
+      <div className="p-4 border-b border-gray-200 dark:border-gray-700">
         <div className="relative">
           <input
             type="text"
@@ -72,7 +72,9 @@ export default function Sidebar({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-            className="w-full px-3 py-2 pr-10 text-sm bg-white text-gray-800 placeholder-gray-400 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-gray-300 transition-colors duration-200"
+            className="w-full px-4 py-2 rounded-lg bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600
+                    focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400
+                    text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
           />
           <button
             onClick={handleSearch}
@@ -139,6 +141,7 @@ export default function Sidebar({
                 }`}
               >
                 <div className="min-w-0">
+                  {/* @ts-ignore */}
                   <div className="text-medium">{content}</div>
                   <div className="font-medium truncate">{date}</div>
                 </div>
