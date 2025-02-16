@@ -1,0 +1,14 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "references": [
+                ["Hello", "12-13-24"],
+                ["Thanks", "12-16-24"]
+            ]
+        }
+    ],
+    "edges": [
+        {"source": "1", "target": "2", "weight": 1}
+    ]
+}

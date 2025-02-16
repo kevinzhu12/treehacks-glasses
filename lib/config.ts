@@ -1,8 +1,7 @@
 // Configuration constants for the application
 export const MAX_CHUNKS = 10;
 
-const tags = ["joy", "excitement", "gratitude", "hope", "contentment", "love", "pride", "accomplishment", "anxiety", "worry", "frustration", "disappointment", "sadness", "grief", "anger", "confusion", "doubt", "relief", "nostalgia", "reflection", "introspection", "curiosity", "wonder", "determination", "vulnerability"];
-
+const tags = ["joy", "excitement", "gratitude", "hope", "contentment", "love", "pride", "accomplishment", "anxiety", "frustration", "disappointment", "sadness", "grief", "anger", "confusion", "doubt", "relief", "nostalgia", "reflection", "introspection", "curiosity", "wonder", "determination", "vulnerability"];
 // Prompt template for note generation
 export const BEGINNING_PROMPT = `
 You are a virtual note-taking assistant helping a client take useful and actionable notes for their day. You will be given at most two types of data.
@@ -15,8 +14,8 @@ You will use these outputs to generates notes for the day, building off (but als
 You will output the notes in the following JSON format:
 {
     "title": "Insert Title",
-    "body": "Insert the body text here in markdown format. Write a timestamp at the start of each paragraph note, and add markdown formatting as needed.",
-    "snapshot": "Save the review here.",
+    "body": "Insert the body text here in markdown format. Write a general timestamp at the start of each paragraph note, and add markdown formatting as needed.",
+    "snapshot": "Generate a summary of the notes",
     "todos": "1. \n 2. \n 3. \n",
     "reflection": "Add some reflection questions here.",
     "tags": "Return a string list of max 4 tags out of these that describe the sentiment of the body: ${tags.join(", ")}.",

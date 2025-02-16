@@ -51,6 +51,33 @@ export default function NotePage() {
       e.preventDefault();
     }
   };
+  const tagColors = [
+    "#1F93FF",
+    "#FF1F9E",
+    "#B81FFF",
+    "#1F4FFF",
+    "#FF221F",
+    "#DA1FFF",
+    "#1FD6FF",
+    "#FF1F5A",
+    "#1F2EFF",
+    "#FF441F",
+    "#1F71FF",
+    "#961FFF",
+    "#1FB4FF",
+    "#FF1F39",
+    "#1FF8FF",
+    "#FF661F",
+    "#531FFF",
+    "#FF1FBF",
+    "#311FFF",
+    "#FF1F7C",
+    "#751FFF",
+    "#1F8FFF",
+    "#FF871F",
+    "#FB1FFF",
+  ];
+
 
   if (!note) {
     return (
@@ -72,14 +99,25 @@ export default function NotePage() {
         <p className="text-gray-400 mb-8 text-md">{note.date}</p>
 
         <p className="text-gray-400">
-          Tags: {note.content.tags.join(', ')}
+          {note.content.tags.map((tag, index) => (
+            <span
+              key={index}
+              style={{
+                backgroundColor: `${tagColors[index % tagColors.length]}90`, // added opacity
+                fontFamily: 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
+              }}
+              className="rounded-full px-2 py-1 text-sm text-white mr-1.5"
+            >
+              {tag}
+            </span>
+          ))}
         </p>
 
         {/* Two-column notes layout */}
-        <div className="grid grid-cols-[minmax(0,_550px)_minmax(0,_1fr)] gap-12">
+        <div className="grid grid-cols-[minmax(0,_550px)_minmax(0,_1fr)] gap-12 pt-4 mt-4">
           {/* Main content */}
           <div
-            className="min-h-[500px] text-gray-800 text-sm leading-relaxed focus:outline-none break-words"
+            className="min-h-[500px] text-gray-800 text-md leading-relaxed focus:outline-none break-words"
             style={{
               fontFamily:
                 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',

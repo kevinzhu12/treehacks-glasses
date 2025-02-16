@@ -32,20 +32,18 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Text is required" }, { status: 400 });
     }
 
-    
-
     const chunks = getTranscripts();
 
-    chunks.push(text);
+    const timestamp = new Date().getTime();
 
-    console.log(chunks);
+    chunks.push(`${timestamp}: ${text}`);
 
     saveTranscripts(chunks);
 
     // If we exceed the maximum chunks, process the complete transcript
     if (chunks.length >= MAX_CHUNKS) {
       // const completeTranscript = chunks.join(" ");
-      console.log("=== Complete Transcript ===");
+      console.log("=== Completed Transcript ===");
       // console.log(completeTranscript);
       // console.log("=========================");
 
@@ -67,7 +65,7 @@ export async function POST(request: Request) {
       }
 
 
-      // clearTranscripts();
+      clearTranscripts();
       return NextResponse.json({
         status: "completed",
         processedTranscript: "complete transcript",
