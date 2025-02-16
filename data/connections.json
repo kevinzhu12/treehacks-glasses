@@ -79,6 +79,16 @@
       "id": "Debugging Continued with Graph Structure Discussions and Personal Reflections",
       "group": 1,
       "content": "The day was primarily spent debugging various technical issues related to graphs and JSON parsing. There were discussions about project names and minor design changes. The sentiment was marked by frustration and confusion, with brief moments of levity. The team continued to seek solutions and support each other throughout the day. Additional discussions included the challenges of using genes for generalization, message passing functions, and the idea of treating images as graph structures. The team also debated the use of transformers in graph structures and the need for a clear methodology to aggregate features from surrounding nodes. Personal reflections were made about the challenges of building one's own thing and the desire for agency."
+    },
+    {
+      "id": "Continued Debugging, Exploration of Graph Structures, and Personal Projects",
+      "group": 1,
+      "content": "The day was primarily spent debugging various technical issues related to graphs and JSON parsing. There were discussions about project names and minor design changes. The sentiment was marked by frustration and confusion, with brief moments of levity. The team continued to seek solutions and support each other throughout the day. Additional discussions included the challenges of using genes for generalization, message passing functions, and the idea of treating images as graph structures. The team also debated the use of transformers in graph structures and the need for a clear methodology to aggregate features from surrounding nodes. There were also discussions about personal projects and the desire to focus on personal agency. The team expressed acceptance of the current situation and frustration with the concept of AGI. New snippets indicated continued discussions on method changes and startup considerations. There were moments of humor and fun, with the team discussing the use of vim live share and its benefits. There was also a sense of excitement and agreement among the team members."
+    },
+    {
+      "id": "Continued Debugging and Exploration of Graph Structures",
+      "group": 1,
+      "content": "The day was primarily spent debugging various technical issues related to graphs and JSON parsing. There were discussions about project names and minor design changes. The sentiment was marked by frustration and confusion, with brief moments of levity. The team continued to seek solutions and support each other throughout the day. Additional discussions included the challenges of using genes for generalization, message passing functions, and the idea of treating images as graph structures. The team also debated the use of transformers in graph structures and the need for a clear methodology to aggregate features from surrounding nodes. There were also discussions about personal projects and the desire to focus on personal agency. The team expressed acceptance of the current situation and frustration with the concept of AGI. New snippets indicated continued discussions on method changes and startup considerations. There were moments of humor and fun, with the team discussing the use of vim live share and its benefits. There was also a sense of excitement and agreement among the team members. Towards the end of the day, there was a sense of urgency and action, with the team discussing pushing changes to the main branch and seeking permission."
     }
   ],
   "links": [
@@ -225,6 +235,26 @@
     {
       "source": "Work and Reflection",
       "target": "Debugging Continued with Graph Structure Discussions and Additional Challenges",
+      "value": 1
+    },
+    {
+      "source": "Continued Debugging and Exploration of Graph Structures",
+      "target": "Work and Reflection",
+      "value": 1
+    },
+    {
+      "source": "Continued Debugging and Exploration of Graph Structures",
+      "target": "Physics Quiz Prep",
+      "value": 1
+    },
+    {
+      "source": "Work and Reflection",
+      "target": "Continued Debugging, Exploration of Graph Structures, and Personal Projects",
+      "value": 1
+    },
+    {
+      "source": "Physics Quiz Prep",
+      "target": "Work and Reflection",
       "value": 1
     }
   ]
