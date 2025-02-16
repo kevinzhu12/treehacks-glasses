@@ -8,11 +8,12 @@ import {
   saveTranscripts,
   clearTranscripts,
 } from "@/lib/storage";
+import { buildNote } from "@/lib/notetaker";
 
 // import { sendOpenAIRequest } from "../../../lib/requests";
 import { useState } from "react";
 
-export const MAX_CHUNKS = 25;
+export const MAX_CHUNKS = 5;
 
 export async function GET() {
   const chunks = getTranscripts();
@@ -28,33 +29,38 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Text is required" }, { status: 400 });
     }
 
-    saveTranscripts([text]);
+    // saveTranscripts([text]);
 
     const chunks = getTranscripts();
-    chunks.push(text);
 
-    // If we exceed the maximum chunks, process the complete transcript
-    if (chunks.length >= MAX_CHUNKS) {
-      const completeTranscript = chunks.join(" ");
-      console.log("=== Complete Transcript ===");
-      console.log(completeTranscript);
-      console.log("=========================");
+    console.log(chunks)
 
-      // CALL THE LLM HERE
-      const response = await fetch(
-        ""
-      )
+    // chunks.push(text);
+
+    console.log(chunks);
+
+    // // If we exceed the maximum chunks, process the complete transcript
+    // if (chunks.length >= MAX_CHUNKS) {
+    //   // const completeTranscript = chunks.join(" ");
+    //   console.log("=== Complete Transcript ===");
+    //   // console.log(completeTranscript);
+    //   // console.log("=========================");
+
+    //   // CALL THE LLM HERE
+    //   const note = await buildNote(chunks);
+    //   console.log(note);
+      
       
 
-      clearTranscripts();
-      return NextResponse.json({
-        status: "completed",
-        processedTranscript: completeTranscript,
-      });
-    }
+    //   // clearTranscripts();
+    //   return NextResponse.json({
+    //     status: "completed",
+    //     processedTranscript: note,
+    //   });
+    // }
 
-    // Save the updated chunks
-    saveTranscripts(chunks);
+    // // Save the updated chunks
+    // saveTranscripts(chunks);
 
     return NextResponse.json(
       {

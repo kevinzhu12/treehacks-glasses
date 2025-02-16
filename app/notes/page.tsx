@@ -40,10 +40,10 @@ export default function NotesHome() {
       <div className="max-w-3xl mx-auto px-8 py-12">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-6 text-gray-800">Welcome</h1>
-          <div>
+          {/* <div>
             <button onClick={handleButtonClick}>Send Request</button>
             <Notes text={response} />
-          </div>
+          </div> */}
         </div>
       </div>
     </main>

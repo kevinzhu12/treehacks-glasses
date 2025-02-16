@@ -33,6 +33,8 @@ if (!fs.existsSync(NOTES_FILE)) {
 export function getTranscripts(): string[] {
   try {
     const data = fs.readFileSync(TRANSCRIPT_FILE, "utf-8");
+
+    console.log("READING TRANSCRIPTS", data);
     return JSON.parse(data);
   } catch (error) {
     console.error("Error reading transcripts:", error);
