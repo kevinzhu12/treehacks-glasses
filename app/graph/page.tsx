@@ -56,9 +56,9 @@ const Graph = () => {
             <ForceGraph3D
                 graphData={myData}
                 nodeLabel="id"
-                nodeAutoColorBy="group"
-                nodeResolution={100}
-                linkDirectionalParticles={1}
+                nodeAutoColorBy={"group"}
+                nodeResolution={20}
+                linkDirectionalParticles={150}
                 linkDirectionalParticleResolution={12}
                 backgroundColor="#FAF9F6"
                 // linkColor="#000000"

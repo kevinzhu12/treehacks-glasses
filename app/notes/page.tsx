@@ -11,7 +11,7 @@ export default function NotesHome() {
         </div>
         <div className="absolute left-0 right-0 text-center" style={{zIndex: 2, fontFamily : "PT Serif, Helvetica"}}>
           <h1 style={{fontWeight: "bold", fontFamily: "DM Sans, Helvetica", fontSize: "3rem"}} className="text-3xl font-semibold text-gray-800 mb-3">
-            Wander
+            Mirror
           </h1>
           <p className="text-base text-gray-400 mb-12">
             Capture your thoughts and reflections. Select an entry to begin.

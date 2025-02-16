@@ -3,2023 +3,383 @@
     {
       "id": "Work and Reflection (2025-02-15)",
       "group": 1,
-      "content": "Work and Reflection (2025-02-15)\n### 8:00 AM - Starting the Day\nI woke up feeling a little bit tired this morning, but I knew I had a lot to do, so I pushed myself to get moving. I started by reviewing the progress I’ve made in my research over the past week. It was a bit overwhelming at first, trying to wrap my head around everything I’d done, but it also felt rewarding. When I looked at the model results, I was pretty happy with how things were progressing, but I know there’s still a lot of work to be done.\n\n### 10:00 AM - Refining the Neural Network\nAfter reviewing the model, I decided to spend the first few hours of the day refining the neural network. I’ve been trying to adjust some hyperparameters to improve the accuracy, and it’s been a slow but steady process. I’ve learned a lot from experimenting with different configurations, but I keep hitting these small roadblocks where the model just doesn’t perform as well as I’d hoped.\n\n### 12:00 PM - Lunch Break\nAround lunchtime, I took a short break and grabbed a bite with a friend. We went to a nearby café, and it was nice to get out of my head for a little while. Sometimes I forget how much a small break can reset my mind. We ended up chatting about our classes and upcoming assignments, and it felt good to talk about something other than research for a change.\n\n### 1:30 PM - Back to the Grind\nWhen I got back to my desk, I dove back into the neural network adjustments. The afternoon was spent testing the model with a larger dataset. It was a bit nerve-wracking at first because I wasn’t sure if it would hold up under the new data, but thankfully, the results were promising. The model seemed to handle the larger dataset much better than I expected, and that gave me a little boost of motivation. I feel like I’m getting closer to where I need to be.\n\n### 4:30 PM - Taking a Walk\nAs the evening approached, I felt like I needed to step away from the screen for a bit. I’ve been spending so much time glued to the computer lately, and my eyes were starting to get sore. I decided to go for a walk outside to clear my head. It was a chilly evening, but the fresh air helped me unwind. I even took a few moments to just sit and watch the sunset. I’ve been trying to be more mindful lately, and little moments like that really help me put things into perspective.\n\n### 6:00 PM - Reflecting on Personal Growth\nWhen I got back to my apartment, I took a few minutes to reflect on my personal growth. This past week has been a bit of a rollercoaster, but I’ve realized how much I’ve improved in managing my time. In the past, I would have been stressing over every little thing, but now I’m learning to break things down into manageable chunks. I’m also starting to realize the importance of pacing myself so I don’t burn out. It’s so easy to get caught up in the grind and forget that taking care of myself is just as important.\n\n### 7:30 PM - Final Touches on the Research\nAfter my walk, I spent a bit more time working on the research. I refined some of the notes I’d made earlier in the week, documenting the changes I’ve made to the model and what still needs to be improved. I’m feeling pretty confident about the direction I’m headed, but there’s still a lot of uncertainty, and I think that’s part of the process. Sometimes it feels like I’m never going to get everything right, but when I look at where I started, it’s clear that I’ve made a lot of progress.\n\n### 9:00 PM - Evening Meeting with Classmate\nBy the time I wrapped up for the day, I felt a sense of accomplishment. Even though I didn’t solve every problem, I was able to move things forward. That’s the most I can ask for right now. I met up with a classmate later in the evening, and we talked about our upcoming projects for next week. It was really helpful to bounce ideas off each other, and I feel like I have a better idea of where to focus my efforts moving forward.\n\n### 10:30 PM - Reflecting on the Day\nAs I sat down to finally relax, I thought about how important it is to reflect on the day. It’s easy to get caught up in the rush of assignments and deadlines, but taking a moment to step back and appreciate the small victories is so crucial. I feel like I’ve learned a lot not just about my research, but about how to handle the pressure of college life in general. Tomorrow will be a new day, and I’m ready to take it on with a clearer head."
+      "content": "Work and Reflection (2025-02-15)\n### 8:00 AM - Starting the Day\nI woke up feeling a little bit tired this morning, but I knew I had a lot to do, so I pushed myself to get moving. I started by reviewing the progress I’ve made in my research over the past week. ...",
+      "tags": ["research", "neural networks", "reflection", "time management", "self-care", "happy"]
     },
     {
       "id": "Quiz Day (2025-02-11)",
-      "group": 1,
-      "content": "Quiz Day (2025-02-11)\nThe day started with a little bit of anxiety, but I was able to relax after some morning coffee. I took one last look at my notes before heading to the lecture hall for the physics quiz.\n\nThe quiz itself went surprisingly smoothly. Some of the questions were trickier than I expected, but I was able to work through them methodically. I finished with a few minutes to spare and double-checked my answers.\n\nAfter the quiz, I met up with a classmate to talk about the questions. It helped calm my nerves knowing that we both felt pretty good about it. Now I’m just waiting for the results."
+      "group": 5,
+      "content": "Quiz Day (2025-02-11)\nThe day started with a knot of anxiety in my stomach, as it always does before quizzes, but the smell of freshly brewed morning coffee from the kitchen downstairs helped to soothe my nerves a little. ...",
+      "tags": ["quiz", "physics", "relief", "study", "anxiety", "happy"]
     },
     {
       "id": "Research Milestone (2025-02-12)",
       "group": 1,
-      "content": "Research Milestone (2025-02-12)\nWhat a day! I finally made a breakthrough with my research model. I’ve been tweaking the neural network for weeks now, and it’s finally showing promising results. This afternoon, I tested the new model with a fresh set of data, and it performed even better than I expected.\n\nI spent the evening documenting my results, making sure everything was clear for my advisor. I’m planning to write up a report for our meeting tomorrow. I can’t wait to see what she thinks about the new approach.\n\nI also took a step back to reflect on the process. It hasn’t been easy, but this progress is motivating me to keep pushing forward."
+      "content": "Research Milestone (2025-02-12)\nWhat a day! I finally made a significant breakthrough with my research model! After countless hours of debugging and experimenting, I’ve been tweaking the neural network architecture and hyperparameters for weeks now, and it’s finally showing genuinely promising results. ...",
+      "tags": ["research", "milestone", "neural networks", "breakthrough", "motivation", "happy"]
     },
     {
       "id": "Errands and Research (2025-02-13)",
-      "group": 1,
-      "content": "Errands and Research (2025-02-13)\nThe day started with a few errands. I had to pick up some groceries and get a few supplies for the weekend, but I was able to knock it all out early in the morning. The rest of the day was spent in the lab working on my research.\n\nI’m making good progress on the new model, but there’s still a lot to refine. I spent a few hours testing some different configurations and analyzing the data. I also met with a colleague for a quick brainstorming session, which gave me some new ideas.\n\nBy the end of the day, I felt like I was on the right track. I still have a lot to do, but I’m excited about where this research is heading."
+      "group": 2,
+      "content": "Errands and Research (2025-02-13)\nThe day started with a quick dash to run a few essential errands before the lab got too busy. I had to pick up some groceries for the week – mostly healthy snacks and ingredients for simple dinners – and also get a few lab supplies that were running low, specifically those specialized petri dishes we use for cell culturing experiments for another side-project. ...",
+      "tags": ["research"]
     },
     {
       "id": "Valentine's Day with Friends (2025-02-14)",
-      "group": 1,
-      "content": "Valentine's Day with Friends (2025-02-14)\nStarted the day with a little bit of research before the afternoon plans. I went over some new papers for my neuroscience project and took notes for future reference.\n\nIn the afternoon, I spent some time with friends. We had a small Valentine’s Day dinner. It was nice to take a break from all the work and just enjoy some good food and great company.\n\nWe laughed a lot and talked about our upcoming plans for the semester. It was a good reminder to take some time off and recharge."
+      "group": 3,
+      "content": "Valentine's Day with Friends (2025-02-14)\nStarted the day as usual, with a solid couple of hours of dedicated research before the afternoon’s Valentine's Day plans took over.  I decided to use the morning to dive into some new research papers related to my neuroscience project. ...",
+      "tags": ["friends", "social", "dinner"]
     },
     {
       "id": "Research Update (2025-02-01)",
       "group": 1,
-      "content": "Research Update (2025-02-01)\nSpent the afternoon working on my research project. Finally made some progress with my RNN model, but there's still a lot to optimize."
+      "content": "Research Update (2025-02-01)\nSpent the entire afternoon completely focused on working on my primary research project. I dedicated the time to tackling a particularly persistent issue I’ve been facing with my Recurrent Neural Network (RNN) model.  ...",
+      "tags": ["research", "rnn"]
     },
     {
       "id": "Study Session with Friends (2025-02-02)",
-      "group": 1,
-      "content": "Study Session with Friends (2025-02-02)\nStudied with my friends at the library. We went over our physics problems for the upcoming quiz. It was productive, but we need to practice more on electric potential problems."
+      "group": 5,
+      "content": "Study Session with Friends (2025-02-02)\nHeaded to the main university library this afternoon for a pre-quiz study session with my usual physics study group, consisting of Liam and Sarah. We specifically decided to focus on going over complex physics problems in preparation for the upcoming Physics 2 quiz scheduled for next week. ...",
+      "tags": ["study group", "physics", "study", "friends", "social"]
     },
     {
       "id": "Errands Day (2025-02-03)",
-      "group": 1,
-      "content": "Errands Day (2025-02-03)\nGot some errands done today. Went grocery shopping, picked up a few things for the weekend. It’s always nice to get these little things off my list."
+      "group": 2,
+      "content": "Errands Day (2025-02-03)\nDedicated a significant chunk of today to just getting necessary errands done and out of the way early in the week.  First thing in the morning, I went grocery shopping at the local supermarket, stocking up on essential groceries for the week ahead - mainly healthy lunch and dinner ingredients. ...",
+      "tags": ["errands", "planning", "organization"]
     },
     {
       "id": "Physics 2 Quiz Prep (2025-02-04)",
-      "group": 1,
-      "content": "Physics 2 Quiz Prep (2025-02-04)\nReviewed Coulomb’s Law and Gauss’s law today. I think I have a better understanding now, but I need to revisit the torque problems."
+      "group": 5,
+      "content": "Physics 2 Quiz Prep (2025-02-04)\nSpent a focused block of time today specifically dedicated to preparing for the upcoming Physics 2 quiz this Friday.  I methodically reviewed the core concepts of Coulomb’s Law and Gauss’s law in detail from the textbook and my lecture notes, working through example problems step-by-step. ...",
+      "tags": ["physics", "quiz prep", "study"]
     },
     {
       "id": "Dinner with Julia (2025-02-05)",
-      "group": 1,
-      "content": "Dinner with Julia (2025-02-05)\nHad a great dinner with Julia. We tried a new charcuterie board recipe. She’s been really into biology lately, and we talked about some of her latest research ideas."
+      "group": 3,
+      "content": "Dinner with Julia (2025-02-05)\nHad a thoroughly enjoyable and intellectually stimulating dinner with my friend Julia this evening at her apartment. We decided to try out a new and somewhat ambitious charcuterie board recipe she found online.  ...",
+      "tags": ["dinner", "social", "friends"]
     },
     {
       "id": "Research Collaboration (2025-02-06)",
       "group": 1,
-      "content": "Research Collaboration (2025-02-06)\nMet with a colleague to discuss potential collaboration on the neuroscience project. We brainstormed how to enhance the spatial embedding of the RNN. Excited to explore this further."
+      "content": "Research Collaboration (2025-02-06)\nHad a very productive and insightful meeting with Dr. Ramirez, a senior colleague in the Neuroscience department, to seriously discuss a potential formal collaboration on my current neuroscience research project.  ...",
+      "tags": ["research", "collaboration", "neuroscience"]
     },
     {
       "id": "Physical Therapy (2025-02-07)",
-      "group": 1,
-      "content": "Physical Therapy (2025-02-07)\nTook some time off today to focus on physical therapy. My shoulder’s been bothering me, and I need to make sure I’m staying on top of it."
+      "group": 6,
+      "content": "Physical Therapy (2025-02-07)\nTook a necessary and deliberate chunk of time off from focused academic work today to prioritize my physical well-being and specifically focus on attending my regular physical therapy session. ...",
+      "tags": ["physical therapy", "self-care", "health"]
     },
     {
       "id": "Weekend Trip (2025-02-08)",
-      "group": 1,
-      "content": "Weekend Trip (2025-02-08)\nWent on a weekend trip with friends. We explored the city, visited some cool museums, and had a blast. It was a nice break from everything."
+      "group": 3,
+      "content": "Weekend Trip (2025-02-08)\nFinally embarked on a long-awaited weekend trip with a close group of friends! We drove out to a nearby city we hadn't explored before – Ashtonville.  ...",
+      "tags": ["weekend", "trip", "friends", "social"]
     },
     {
       "id": "Weekend Reflection (2025-02-09)",
-      "group": 1,
-      "content": "Weekend Reflection (2025-02-09)\nReflecting on the weekend trip, I realized how much I enjoy exploring new places. It’s a good reminder to balance work with leisure."
+      "group": 4,
+      "content": "Weekend Reflection (2025-02-09)\nSpending a quiet Sunday afternoon reflecting on the past weekend trip to Ashtonville.  Looking back at all the fun activities and relaxed moments, I genuinely realized and appreciated just how much I inherently enjoy exploring new places and experiencing different environments. ...",
+      "tags": ["weekend", "reflection", "leisure"]
     },
     {
       "id": "Web Development Challenges and Personal Reflections (2025-02-10)",
+      "group": 7,
+      "content": "Web Development Challenges and Personal Reflections (2025-02-10)\n**10:30 AM:** Started the day diving straight into a frustrating and unexpected issue with my web development side project.  While rigorously testing cross-browser compatibility, I discovered that Chrome, unlike Safari, inexplicably does not properly support 2D matrices for WebGPU – a core functionality I’m heavily relying on for the real-time diffusion features. ...",
+      "tags": ["web development", "challenges", "personal", "reflection"]
+    },
+    {
+      "id": "Debugging Deep Dive (2025-01-16)",
       "group": 1,
-      "content": "Web Development Challenges and Personal Reflections (2025-02-10)\n**10:30 AM:** Encountered an issue with web development project. Chrome does not support 2D matrices for WebGPU, while Safari does. This discrepancy is causing compatibility issues.\n\n**11:00 AM:** Need to investigate the caching benefits and potential solutions for the matrix support issue. Considering alternatives to ensure cross-browser compatibility.\n\n**12:00 PM:** Discussed the issue with the team. The caching benefits in Safari are significant, especially for storing 2D matrices. However, Chrome's lack of support is problematic. Need to explore why the model file needs to be downloaded and how to optimize this process.\n\n**1:00 PM:** Realized that the model file is quite large (40 MB), which might be causing performance issues. Need to find a way to reduce the file size or optimize the download process.\n\n**2:00 PM:** Adding real-time diffusion features to the website. The problem persists with Chrome not supporting 2D matrices for WebGPU. The caching benefits in Safari are much better, but the model file download is still a concern. The model file runs at around 15-16 diffusion frames, which is acceptable but needs optimization.\n\n**3:00 PM:** Revisited the real-time diffusion feature and discussed optimization strategies with the team. The caching benefits in Safari are still superior, but the model file download remains a bottleneck. Considering alternative approaches to handle the 40 MB model file efficiently.\n\n**4:00 PM:** Tested the real-time diffusion feature across different browsers. The feature works well in Safari but faces issues in Chrome due to the lack of 2D matrix support. Need to find a workaround for Chrome compatibility.\n\n**5:00 PM:** Explored potential solutions for reducing the model file size. Compression techniques and optimizing the download process are being considered. The goal is to improve performance and ensure a smoother user experience across all browsers.\n\n**6:00 PM:** Continued adding real-time diffusion features to the website. The issue with Chrome not supporting 2D matrices for WebGPU persists. The caching benefits in Safari are significant, but the need to download the 40 MB model file is a concern. The feature runs at around 15-16 diffusion frames, which is acceptable but requires optimization.\n\n**7:00 PM:** Discussed the real-time diffusion feature with a colleague. Emphasized the need to optimize the model file download process and ensure cross-browser compatibility. The feature is a favorite and adding it to the website is a priority.\n\n**8:00 PM:** Reflected on personal life. Discussed dating advice and personal relationships. Considered the importance of communication and emotional well-being.\n\n**9:00 PM:** Had a conversation about dating and relationships. Mentioned receiving amazing dating advice over the summer. Reflected on a recent date and the mixed signals received.\n\n**10:00 PM:** Discussed the fear and anxiety associated with asking someone out. Reflected on the complexity of relationships and the importance of clear communication.\n\n**11:00 PM:** Additional reflection on personal relationships and the challenges of asking someone out. Emphasized the fear and anxiety associated with it.\n\n**12:00 AM:** Spent time troubleshooting the diffusion model. The activation function used was causing convergence issues. The issue was traced back to a constant in the CUDA kernel being slightly off, which affected the entire model's performance.\n\n**1:00 AM:** Further discussed the importance of the real-time diffusion feature and the need for optimization. The feature is a favorite and adding it to the website is a priority.\n\n**2:00 AM:** Reflected on personal life and the desire for a girlfriend. Discussed the fear and anxiety associated with asking someone out and the complexity of relationships."
+      "content": "Debugging Deep Dive (2025-01-16)\n### 9:00 AM - Morning Code Review\nStarted the day by revisiting the diffusion model code. I noticed some inconsistencies in the loss function calculation from yesterday's training run. ...",
+      "tags": ["research", "coding", "debugging", "neural networks"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Advisor Meeting Prep (2025-01-17)",
+      "group": 2,
+      "content": "Advisor Meeting Prep (2025-01-17)\n### 10:00 AM - Reviewing Research Progress\nStarted the morning by thoroughly reviewing all the research progress from the past week, especially the recent debugging and regularization experiments. ...",
+      "tags": ["research", "meeting prep", "presentation", "planning", "organization"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Advisor Meeting and Weekend Kickoff (2025-01-18)",
+      "group": 2,
+      "content": "Advisor Meeting and Weekend Kickoff (2025-01-18)\n### 10:00 AM - Advisor Meeting\nHad my meeting with my advisor this morning. Presented the research progress, including the debugging efforts and regularization experiments. ...",
+      "tags": ["research", "advisor meeting", "meeting", "planning", "weekend"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Hiking and Nature Break (2025-01-19)",
+      "group": 3,
+      "content": "Hiking and Nature Break (2025-01-19)\n### 9:00 AM - Morning Hike\nWoke up early and went on a hike with friends to a nearby state park. The weather was crisp and sunny, perfect for a winter hike. ...",
+      "tags": ["weekend", "hiking", "nature", "friends", "relaxation"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Data Augmentation Implementation (2025-01-20)",
+      "group": 1,
+      "content": "Data Augmentation Implementation (2025-01-20)\n### 9:00 AM - Starting the Week\nStarted the week by reviewing notes from the advisor meeting and the data augmentation research I did on Saturday. ...",
+      "tags": ["research", "data augmentation", "neural networks", "coding", "implementation"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Interpretability Exploration (2025-01-21)",
+      "group": 1,
+      "content": "Interpretability Exploration (2025-01-21)\n### 9:00 AM - Morning - Interpretability Research\nStarted the day by diving into research papers and online resources on model interpretability techniques, as suggested by my advisor. ...",
+      "tags": ["research", "interpretability", "neural networks", "LIME", "SHAP", "coding"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "SHAP Implementation and Comparison (2025-01-22)",
+      "group": 1,
+      "content": "SHAP Implementation and Comparison (2025-01-22)\n### 9:00 AM - Morning - SHAP Research and Setup\nContinued my exploration of model interpretability by focusing on SHAP (SHapley Additive exPlanations).  Read research papers and documentation to understand the theoretical foundations of SHAP and its advantages over LIME. ...",
+      "tags": ["research", "interpretability", "neural networks", "SHAP", "LIME", "coding", "physics study group"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Research Report Draft (2025-01-23)",
+      "group": 2,
+      "content": "Research Report Draft (2025-01-23)\n### 9:00 AM - Morning - Report Outline\nStarted the day by outlining the structure of a research report summarizing the progress made over the past few weeks. ...",
+      "tags": ["research", "report writing", "documentation", "planning", "organization"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Physics Study Group - Torque Focus (2025-01-24)",
+      "group": 5,
+      "content": "Physics Study Group - Torque Focus (2025-01-24)\n### 4:00 PM - Physics Study Group Meeting\nAttended the planned physics study group session with Liam and Sarah. We specifically focused on practicing torque problems related to electric fields, as previously identified as a challenging area. ...",
+      "tags": ["physics", "study group", "physics study group", "torque", "study", "collaboration"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Research Report Finalization and Weekend Start (2025-01-25)",
+      "group": 2,
+      "content": "Research Report Finalization and Weekend Start (2025-01-25)\n### 10:00 AM - Morning - Report Revision\nSpent the morning revising and expanding the research report draft. Focused on incorporating feedback from my self-review yesterday, especially expanding the discussion of interpretability findings and adding a section on limitations and future work. ...",
+      "tags": ["research", "report writing", "finalization", "weekend", "planning"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Downtime and Personal Projects (2025-01-26)",
+      "group": 3,
+      "content": "Downtime and Personal Projects (2025-01-26)\n### 10:00 AM - Slow Morning - Personal Reading\nStarted the day with a slow morning, enjoying a cup of coffee and reading a novel for pleasure, unrelated to my academic work. ...",
+      "tags": ["weekend", "downtime", "relaxation", "personal projects", "coding", "family", "social"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Report Feedback and New Research Direction (2025-01-27)",
+      "group": 1,
+      "content": "Report Feedback and New Research Direction (2025-01-27)\n### 9:00 AM - Checking Email - Advisor Feedback\nStarted the week by checking email and found feedback from my advisor on the research report I submitted on Saturday.  She was positive about the progress and report quality, but suggested exploring a new research direction focused on time-series forecasting using Transformer networks, related to the interpretability insights. ...",
+      "tags": ["research", "advisor feedback", "transformers", "time-series forecasting", "neural networks", "new direction"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Transformer Model Implementation (2025-01-28)",
+      "group": 1,
+      "content": "Transformer Model Implementation (2025-01-28)\n### 9:00 AM - Morning - Data Preprocessing for Transformers\nStarted the day focusing on data preprocessing steps required for feeding my research data into the Transformer model. Transformers often require specific input formats, including positional encodings.  ...",
+      "tags": ["research", "transformers", "neural networks", "coding", "implementation", "web development team meeting"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Transformer Training and Optimization (2025-01-29)",
+      "group": 1,
+      "content": "Transformer Training and Optimization (2025-01-29)\n### 9:00 AM - Morning - Analyzing Transformer Training\nStarted the day by analyzing the results of the initial Transformer model training run from yesterday. The model was training, but validation performance was not yet significantly better than the RNN models. ...",
+      "tags": ["research", "transformers", "neural networks", "optimization"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Revisiting RNN Optimization (2025-01-30)",
+      "group": 1,
+      "content": "Revisiting RNN Optimization (2025-01-30)\n### 9:00 AM - Morning - RNN Re-evaluation\nStarted the day by taking a step back and re-evaluating if focusing solely on Transformers is the optimal research direction. Reviewed my previous work and notes on RNN model optimizations.  ...",
+      "tags": ["research", "rnn", "neural networks", "optimization", "architecture"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Month End Reflection and Planning (2025-01-31)",
+      "group": 4,
+      "content": "Month End Reflection and Planning (2025-01-31)\n### 10:00 AM - Month End Review\nStarted the last day of January by reviewing my notes and progress from the entire month.  Looked back at research milestones, challenges faced, skills learned, and personal reflections.  ...",
+      "tags": ["month end", "reflection", "planning", "research"]
     },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
-    },
-    {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+     {
+      "id": "Debugging Deep Dive (2025-01-16)",
+      "group": 6,
+      "content": "Debugging Deep Dive (2025-01-16)\n### 9:00 AM - Morning Code Review\nStarted the day by revisiting the diffusion model code. I noticed some inconsistencies in the loss function calculation from yesterday's training run. ...",
+      "tags": ["research", "coding", "debugging", "neural networks"]
     },
     {
-      "nodes": [
-        {
-          "group": 1
-        },
-        {
-          "group": 2
-        },
-        {
-          "group": 3
-        },
-        {
-          "group": 4
-        },
-        {
-          "group": 5
-        },
-        {
-          "group": 6
-        }
-      ]
+      "id": "Advisor Meeting Prep (2025-01-17)",
+      "group": 2,
+      "content": "Advisor Meeting Prep (2025-01-17)\n### 10:00 AM - Reviewing Research Progress\nStarted the morning by thoroughly reviewing all the research progress from the past week, especially the recent debugging and regularization experiments. ...",
+      "tags": ["research", "meeting prep", "presentation", "planning", "organization"]
+    },
+    {
+      "id": "Advisor Meeting and Weekend Kickoff (2025-01-18)",
+      "group": 2,
+      "content": "Advisor Meeting and Weekend Kickoff (2025-01-18)\n### 10:00 AM - Advisor Meeting\nHad my meeting with my advisor this morning. Presented the research progress, including the debugging efforts and regularization experiments. ...",
+      "tags": ["research", "advisor meeting", "meeting", "planning", "weekend"]
     }
   ],
   "links": [
     {
       "source": "Work and Reflection (2025-02-15)",
       "target": "Research Milestone (2025-02-12)",
-      "weight": 0.75
+      "weight": 0.5
     },
     {
       "source": "Work and Reflection (2025-02-15)",
-      "target": "Research Update (2025-02-01)",
+      "target": "Interpretability Exploration (2025-01-21)",
+      "weight": 0.4
+    },
+    {
+      "source": "Work and Reflection (2025-02-15)",
+      "target": "Downtime and Personal Projects (2025-01-26)",
+      "weight": 0.3
+    },
+    {
+      "source": "Quiz Day (2025-02-11)",
+      "target": "Physics 2 Quiz Prep (2025-02-04)",
+      "weight": 0.6
+    },
+    {
+      "source": "Quiz Day (2025-02-11)",
+      "target": "Study Session with Friends (2025-02-02)",
+      "weight": 0.5
+    },
+    {
+      "source": "Research Milestone (2025-02-12)",
+      "target": "Transformer Model Implementation (2025-01-28)",
       "weight": 0.7
-    },
-    {
-      "source": "Work and Reflection (2025-02-15)",
-      "target": "Errands and Research (2025-02-13)",
-      "weight": 0.65
-    },
-    {
-      "source": "Work and Reflection (2025-02-15)",
-      "target": "Web Development Challenges and Personal Reflections (2025-02-10)",
-      "weight": 0.62
-    },
-    {
-      "source": "Research Milestone (2025-02-12)",
-      "target": "Research Update (2025-02-01)",
-      "weight": 0.82
-    },
-    {
-      "source": "Research Milestone (2025-02-12)",
-      "target": "Work and Reflection (2025-02-15)",
-      "weight": 0.75
-    },
-    {
-      "source": "Research Milestone (2025-02-12)",
-      "target": "Errands and Research (2025-02-13)",
-      "weight": 0.72
     },
     {
       "source": "Research Milestone (2025-02-12)",
       "target": "Research Collaboration (2025-02-06)",
-      "weight": 0.63
+      "weight": 0.4
     },
     {
       "source": "Errands and Research (2025-02-13)",
-      "target": "Research Milestone (2025-02-12)",
-      "weight": 0.72
+      "target": "Errands Day (2025-02-03)",
+      "weight": 0.5
     },
     {
       "source": "Errands and Research (2025-02-13)",
-      "target": "Work and Reflection (2025-02-15)",
-      "weight": 0.65
-    },
-    {
-      "source": "Errands and Research (2025-02-13)",
-      "target": "Research Update (2025-02-01)",
-      "weight": 0.6
+      "target": "Advisor Meeting Prep (2025-01-17)",
+      "weight": 0.3
     },
     {
       "source": "Valentine's Day with Friends (2025-02-14)",
       "target": "Weekend Trip (2025-02-08)",
-      "weight": 0.68
-    },
-    {
-      "source": "Valentine's Day with Friends (2025-02-14)",
-      "target": "Weekend Reflection (2025-02-09)",
-      "weight": 0.62
-    },
-    {
-      "source": "Research Update (2025-02-01)",
-      "target": "Research Milestone (2025-02-12)",
-      "weight": 0.82
-    },
-    {
-      "source": "Research Update (2025-02-01)",
-      "target": "Work and Reflection (2025-02-15)",
-      "weight": 0.7
-    },
-    {
-      "source": "Research Update (2025-02-01)",
-      "target": "Errands and Research (2025-02-13)",
       "weight": 0.6
     },
     {
-      "source": "Study Session with Friends (2025-02-02)",
-      "target": "Physics 2 Quiz Prep (2025-02-04)",
-      "weight": 0.78
+      "source": "Valentine's Day with Friends (2025-02-14)",
+      "target": "Dinner with Julia (2025-02-05)",
+      "weight": 0.5
+    },
+    {
+      "source": "Research Update (2025-02-01)",
+      "target": "Debugging Deep Dive (2025-01-16)",
+      "weight": 0.7
     },
     {
       "source": "Study Session with Friends (2025-02-02)",
-      "target": "Quiz Day (2025-02-11)",
-      "weight": 0.65
+      "target": "Dinner with Julia (2025-02-05)",
+      "weight": 0.3
     },
     {
       "source": "Errands Day (2025-02-03)",
-      "target": "Errands and Research (2025-02-13)",
-      "weight": 0.63
+      "target": "Weekend Reflection (2025-02-09)",
+      "weight": 0.2
     },
     {
       "source": "Physics 2 Quiz Prep (2025-02-04)",
-      "target": "Study Session with Friends (2025-02-02)",
-      "weight": 0.78
-    },
-    {
-      "source": "Physics 2 Quiz Prep (2025-02-04)",
-      "target": "Quiz Day (2025-02-11)",
-      "weight": 0.7
+      "target": "Physics Study Group - Torque Focus (2025-01-24)",
+      "weight": 0.4
     },
     {
       "source": "Dinner with Julia (2025-02-05)",
-      "target": "Dinner with Julia (2025-02-05)",
-      "weight": 1
+      "target": "Valentine's Day with Friends (2025-02-14)",
+      "weight": 0.5
     },
     {
       "source": "Research Collaboration (2025-02-06)",
-      "target": "Research Milestone (2025-02-12)",
-      "weight": 0.63
+      "target": "SHAP Implementation and Comparison (2025-01-22)",
+      "weight": 0.6
     },
     {
-      "source": "Weekend Trip (2025-02-08)",
-      "target": "Valentine's Day with Friends (2025-02-14)",
-      "weight": 0.68
+      "source": "Physical Therapy (2025-02-07)",
+      "target": "Hiking and Nature Break (2025-01-19)",
+      "weight": 0.4
     },
     {
       "source": "Weekend Trip (2025-02-08)",
       "target": "Weekend Reflection (2025-02-09)",
-      "weight": 0.79
+      "weight": 0.7
     },
     {
       "source": "Weekend Reflection (2025-02-09)",
-      "target": "Weekend Trip (2025-02-08)",
-      "weight": 0.79
-    },
-    {
-      "source": "Weekend Reflection (2025-02-09)",
-      "target": "Valentine's Day with Friends (2025-02-14)",
-      "weight": 0.62
+      "target": "Month End Reflection and Planning (2025-01-31)",
+      "weight": 0.3
     },
     {
       "source": "Web Development Challenges and Personal Reflections (2025-02-10)",
-      "target": "Work and Reflection (2025-02-15)",
-      "weight": 0.62
+      "target": "Transformer Model Implementation (2025-01-28)",
+      "weight": 0.4
+    },
+    {
+      "source": "Debugging Deep Dive (2025-01-16)",
+      "target": "Revisiting RNN Optimization (2025-01-30)",
+      "weight": 0.3
+    },
+    {
+      "source": "Advisor Meeting Prep (2025-01-17)",
+      "target": "Research Report Draft (2025-01-23)",
+      "weight": 0.4
+    },
+    {
+      "source": "Advisor Meeting and Weekend Kickoff (2025-01-18)",
+      "target": "Advisor Meeting Prep (2025-01-17)",
+      "weight": 0.2
+    },
+    {
+      "source": "Hiking and Nature Break (2025-01-19)",
+      "target": "Downtime and Personal Projects (2025-01-26)",
+      "weight": 0.5
+    },
+    {
+      "source": "Data Augmentation Implementation (2025-01-20)",
+      "target": "Transformer Training and Optimization (2025-01-29)",
+      "weight": 0.6
+    },
+    {
+      "source": "Interpretability Exploration (2025-01-21)",
+      "target": "SHAP Implementation and Comparison (2025-01-22)",
+      "weight": 0.7
+    },
+    {
+      "source": "SHAP Implementation and Comparison (2025-01-22)",
+      "target": "Research Report Finalization and Weekend Start (2025-01-25)",
+      "weight": 0.5
+    },
+    {
+      "source": "Research Report Draft (2025-01-23)",
+      "target": "Research Report Finalization and Weekend Start (2025-01-25)",
+      "weight": 0.6
+    },
+    {
+      "source": "Physics Study Group - Torque Focus (2025-01-24)",
+      "target": "Quiz Day (2025-02-11)",
+      "weight": 0.3
+    },
+    {
+      "source": "Research Report Finalization and Weekend Start (2025-01-25)",
+      "target": "Month End Reflection and Planning (2025-01-31)",
+      "weight": 0.4
+    },
+    {
+      "source": "Downtime and Personal Projects (2025-01-26)",
+      "target": "Hiking and Nature Break (2025-01-19)",
+      "weight": 0.2
+    },
+    {
+      "source": "Report Feedback and New Research Direction (2025-01-27)",
+      "target": "Advisor Meeting and Weekend Kickoff (2025-01-18)",
+      "weight": 0.3
+    },
+    {
+      "source": "Transformer Model Implementation (2025-01-28)",
+      "target": "Revisiting RNN Optimization (2025-01-30)",
+      "weight": 0.5
+    },
+    {
+      "source": "Transformer Training and Optimization (2025-01-29)",
+      "target": "SHAP Implementation and Comparison (2025-01-22)",
+      "weight": 0.2
     }
   ]
 }
