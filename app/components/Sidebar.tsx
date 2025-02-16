@@ -18,14 +18,49 @@ export default function Sidebar({
   const handleSearch = async () => {
     try {
       const response = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);
+      if (!response.ok) {
+        throw new Error(`Search failed: ${response.status}`);
+      }
       const data = await response.json();
-      console.log("RESPONSE", data);
+      console.log("Search response structure:", {
+        data,
+        total: data.total,
+        hits: data.hits,
+        firstHit: data.hits?.[0]
+      });
 
-      setSearchResults(data.results);
+      if (data.error) {
+        console.error("Search error:", data.error);
+        return;
+      }
+
+      // Remove duplicates and sort by date
+      const uniqueHits = data.hits.reduce((acc: any[], hit: any) => {
+        if (!acc.find((h) => h._source.date === hit._source.date)) {
+          acc.push(hit);
+        }
+        return acc;
+      }, []);
+
+      uniqueHits.sort((a: any, b: any) => 
+        new Date(a._source.date).getTime() - new Date(b._source.date).getTime()
+      );
+
+      setSearchResults({
+        ...data,
+        hits: uniqueHits,
+        total: { value: uniqueHits.length }
+      });
     } catch (error) {
       console.error("Search error:", error);
     }
   };
+
+  // Sort notes by date
+  const sortedNotes = Object.entries(notes)
+    .sort(([dateA], [dateB]) => 
+      new Date(dateA).getTime() - new Date(dateB).getTime()
+    );
 
   return (
     <nav className="sidebar w-64 h-screen border-r border-gray-200 fixed left-0 top-0 bg-[#faf9f6] flex flex-col">
@@ -65,15 +100,22 @@ export default function Sidebar({
           {searchResults ? (
             <div className="mb-4">
               <h3 className="text-sm font-medium text-gray-500 mb-2">Search Results</h3>
-              {searchResults.total > 0 ? (
+              {searchResults.total && searchResults.total.value > 0 ? (
                 searchResults.hits.map((hit: any, index: number) => (
-                  <div
-                    key={index}
-                    className="p-2 rounded-lg bg-white shadow-sm border border-gray-100 mb-2"
+                  <Link
+                    key={hit._source.date}
+                    href={`/notes/${hit._source.date}`}
+                    className={`block p-2 rounded-lg text-sm transition-colors duration-200 ${
+                      pathname === `/notes/${hit._source.date}`
+                        ? "bg-gray-100 text-gray-800"
+                        : "text-gray-500 hover:bg-gray-100"
+                    }`}
                   >
-                    <div className="text-sm text-gray-800">{hit._source.body}</div>
-                    <div className="text-xs text-gray-500 mt-1">{hit._source.date}</div>
-                  </div>
+                    <div className="min-w-0">
+                      <div className="text-medium">{hit._source.title}</div>
+                      <div className="font-medium truncate">{hit._source.date}</div>
+                    </div>
+                  </Link>
                 ))
               ) : (
                 <div className="text-sm text-gray-500">No results found</div>
@@ -86,7 +128,7 @@ export default function Sidebar({
               </button>
             </div>
           ) : (
-            Object.keys(notes).map((date) => (
+            sortedNotes.map(([date, content]) => (
               <Link
                 key={date}
                 href={`/notes/${date}`}
@@ -97,7 +139,7 @@ export default function Sidebar({
                 }`}
               >
                 <div className="min-w-0">
-                  <div className="text-medium">{notes[date]}</div>
+                  <div className="text-medium">{content}</div>
                   <div className="font-medium truncate">{date}</div>
                 </div>
               </Link>
