@@ -1,16 +1,29 @@
 "use client";
 
-import Graph from "../graph/page"
+import Graph from "../graph/page";
 
 export default function NotesHome() {
   return (
     <main className="min-h-screen bg-[#faf9f6] flex items-center justify-center">
       <div className="text-center max-w-md px-8">
-      <div style={{zIndex: 1}} className="graph-display">
+        <div
+          style={{ zIndex: 1, position: "fixed", top: 0, left: 0 }}
+          className="graph-display"
+        >
           <Graph />
         </div>
-        <div className="absolute left-0 right-0 text-center" style={{zIndex: 2, fontFamily : "PT Serif, Helvetica"}}>
-          <h1 style={{fontWeight: "bold", fontFamily: "DM Sans, Helvetica", fontSize: "3rem"}} className="text-3xl font-semibold text-gray-800 mb-3">
+        <div
+          className="left-0 right-0 text-center"
+          style={{ zIndex: -1, fontFamily: "PT Serif, Helvetica" }}
+        >
+          <h1
+            style={{
+              fontWeight: "bold",
+              fontFamily: "DM Sans, Helvetica",
+              fontSize: "3rem",
+            }}
+            className="text-3xl font-semibold text-gray-800 mb-3"
+          >
             Mirror
           </h1>
           <p className="text-base text-gray-400 mb-12">
@@ -20,7 +33,6 @@ export default function NotesHome() {
             Select an entry to begin
           </h2> */}
         </div>
-        
 
         {/* Subtle arrow pointing to sidebar */}
         <div className="absolute left-24 top-1/2 transform -translate-y-1/2 text-gray-300">

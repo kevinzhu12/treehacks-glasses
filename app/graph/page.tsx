@@ -37,9 +37,7 @@ const Graph = () => {
   if (!myData) return null;
 
   return (
-    <div
-      className="absolute inset-0 z-0 w-full h-full text-center"
-    >
+    <div className="absolute inset-0 z-0 w-full h-full text-center">
       <ForceGraph3D
         graphData={myData}
         nodeLabel="id"
@@ -47,8 +45,12 @@ const Graph = () => {
         nodeResolution={100}
         linkDirectionalParticles={2}
         linkDirectionalParticleResolution={12}
-        backgroundColor={document.documentElement.classList.contains('dark') ? '#1a1a1a' : '#FAF9F6'}
-        linkColor={() => document.documentElement.classList.contains('dark') ? '#ffffff' : '#000000'}
+        backgroundColor={"rgba(0,0,0,0)"}
+        linkColor={() =>
+          document.documentElement.classList.contains("dark")
+            ? "#ffffff"
+            : "#000000"
+        }
         linkVisibility={true}
         linkOpacity={0.8}
         width={dimensions.width}
