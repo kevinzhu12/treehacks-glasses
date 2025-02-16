@@ -73,7 +73,14 @@ const getNodes = (
   const jsonData = JSON.parse(cleanJSON);
   console.log("JSON DATA", jsonData);
 
-  return { id: jsonData["title"], group: 1, content: jsonData["snapshot"] };
+  // Remove any dates from the title (e.g., "2025-02-15" or similar patterns)
+  const titleWithoutDate = jsonData["title"].replace(/\d{4}-\d{2}-\d{2}\s*-?\s*/, '').trim();
+
+  return { 
+    id: titleWithoutDate, 
+    group: 1, 
+    content: jsonData["snapshot"] 
+  };
 };
 
 export const buildNote = async (

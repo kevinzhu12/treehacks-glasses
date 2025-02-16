@@ -37,75 +37,25 @@ const Graph = () => {
   if (!myData) return null;
 
   return (
-    // <main style={{
-    //     position: "relative",
-    //     width: "100vw",
-    //     height: "100vh",
-    //     overflow: "hidden",
-    //     textAlign: "center"
-    // }}>
     <div
-      style={{
-        width: "100%",
-        height: "100%",
-        textAlign: "center",
-        position: "absolute",
-        top: 0,
-        left: 0,
-        zIndex: 0,
-      }}
+      className="absolute inset-0 z-0 w-full h-full text-center"
     >
       <ForceGraph3D
         graphData={myData}
         nodeLabel="id"
         nodeAutoColorBy="group"
         nodeResolution={100}
-        linkDirectionalParticles={1}
+        linkDirectionalParticles={2}
         linkDirectionalParticleResolution={12}
-        backgroundColor="#FAF9F6"
-        // linkColor="#000000"
+        backgroundColor={document.documentElement.classList.contains('dark') ? '#1a1a1a' : '#FAF9F6'}
+        linkColor={() => document.documentElement.classList.contains('dark') ? '#ffffff' : '#000000'}
         linkVisibility={true}
-        linkOpacity={1}
+        linkOpacity={0.8}
         width={dimensions.width}
         height={dimensions.height}
       />
     </div>
-    // </main>
   );
-    return (
-        // <main style={{
-        //     position: "relative",
-        //     width: "100vw",
-        //     height: "100vh",
-        //     overflow: "hidden",
-        //     textAlign: "center"
-        // }}>
-        <div style={{
-            width: "100%",
-            height: "100%",
-            textAlign: "center",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: 0
-        }}>
-            <ForceGraph3D
-                graphData={myData}
-                nodeLabel="id"
-                nodeAutoColorBy={"group"}
-                nodeResolution={20}
-                linkDirectionalParticles={150}
-                linkDirectionalParticleResolution={12}
-                backgroundColor="#FAF9F6"
-                // linkColor="#000000"
-                linkVisibility={true}
-                linkOpacity={1}
-                width={dimensions.width} 
-                height={dimensions.height}
-            />
-        </div>
-        // </main>
-    );
 };
 
 export default Graph;
