@@ -14,6 +14,8 @@ const Graph = () => {
   const [myData, setMyData] = useState<any>();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
+  const graphRef = React.useRef<any>();
+
   useEffect(() => {
     const getGraph = async () => {
       const res = await fetch("/api/graph");
@@ -39,6 +41,7 @@ const Graph = () => {
   return (
     <div className="absolute inset-0 z-0 w-full h-full text-center">
       <ForceGraph3D
+        ref={graphRef}
         graphData={myData}
         nodeLabel="id"
         nodeAutoColorBy="group"
@@ -46,6 +49,21 @@ const Graph = () => {
         linkDirectionalParticles={2}
         linkDirectionalParticleResolution={12}
         backgroundColor={"rgba(0,0,0,0)"}
+        onNodeClick={(node) => {
+          // Aim at node from outside it
+          const distance = 40;
+          const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
+
+          const newPos = node.x || node.y || node.z
+            ? { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }
+            : { x: 0, y: 0, z: distance }; // special case if node is in (0,0,0)
+
+          graphRef.current.cameraPosition(
+            newPos, // new position
+            node, // lookAt ({ x, y, z })
+            1000 // ms transition duration
+          );
+        }}
         linkColor={() =>
           document.documentElement.classList.contains("dark")
             ? "#ffffff"
