@@ -7,13 +7,10 @@ import {
   getTranscripts,
   saveTranscripts,
   clearTranscripts,
+  writeNote,
 } from "@/lib/storage";
 import { buildNote } from "@/lib/notetaker";
-
-// import { sendOpenAIRequest } from "../../../lib/requests";
-import { useState } from "react";
-
-export const MAX_CHUNKS = 5;
+import { MAX_CHUNKS } from "@/lib/config";
 
 export async function GET() {
   const chunks = getTranscripts();
@@ -21,7 +18,6 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  // const [response, setResponse] = useState<string>('');
   try {
     const text = await request.text();
 
@@ -29,38 +25,31 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Text is required" }, { status: 400 });
     }
 
-    // saveTranscripts([text]);
-
     const chunks = getTranscripts();
-
-    console.log(chunks)
-
-    // chunks.push(text);
+    chunks.push(text);
 
     console.log(chunks);
 
-    // // If we exceed the maximum chunks, process the complete transcript
-    // if (chunks.length >= MAX_CHUNKS) {
-    //   // const completeTranscript = chunks.join(" ");
-    //   console.log("=== Complete Transcript ===");
-    //   // console.log(completeTranscript);
-    //   // console.log("=========================");
-
-    //   // CALL THE LLM HERE
-    //   const note = await buildNote(chunks);
-    //   console.log(note);
+    // If we exceed the maximum chunks, process the complete transcript
+    if (chunks.length >= MAX_CHUNKS) {
+      console.log("=== Complete Transcript ===");
       
-      
+      // CALL THE LLM HERE
+      const note = await buildNote(chunks);
+      console.log(note);
 
-    //   // clearTranscripts();
-    //   return NextResponse.json({
-    //     status: "completed",
-    //     processedTranscript: note,
-    //   });
-    // }
+      const date = new Date().toISOString().slice(0, 10);
+      writeNote(date, note);
 
-    // // Save the updated chunks
-    // saveTranscripts(chunks);
+      clearTranscripts();
+      return NextResponse.json({
+        status: "completed",
+        processedTranscript: note,
+      });
+    }
+
+    // Save the updated chunks
+    saveTranscripts(chunks);
 
     return NextResponse.json(
       {

@@ -1,16 +1,23 @@
 {
-    "2025-10-23": {
-        "title": "note title",
-        "body": "HELLO THERE",
-        "snapshot": "snapshot",
-        "todos": "1. \n 2. \n 3. \n",
-        "reflection": "reflection"
-    },
-    "2025-10-22": {
-        "title": "my second note",
-        "body": "hello",
-        "snapshot": "snapshot",
-        "todos": "1. \n 2. \n 3. \n",
-        "reflection": "reflection"
-    }
+  "2025-10-23": {
+    "title": "note title",
+    "body": "HELLO THERE",
+    "snapshot": "snapshot",
+    "todos": "1. \n 2. \n 3. \n",
+    "reflection": "reflection"
+  },
+  "2025-10-22": {
+    "title": "my second note",
+    "body": "hello",
+    "snapshot": "snapshot",
+    "todos": "1. \n 2. \n 3. \n",
+    "reflection": "reflection"
+  },
+  "2025-02-16": {
+    "title": "Planning for Baking and Groceries",
+    "body": "Today, the focus is on preparing for a special occasion by baking a cake. Here are the key points:\n\n- **Grocery List**: \n  - Grapes\n  - Eggs\n  - Flour\n  - Sugar\n\n- **Personal Notes**: \n  - Feeling hungry.\n  - Missing friends.\n\n- **Occasion**: Special occasion.",
+    "snapshot": "Prepare for the special occasion by ensuring all ingredients for the cake are purchased. Also, address personal needs such as hunger and social connections.",
+    "todos": "1. Go to the grocery store.\n2. Buy grapes, eggs, flour, and sugar.\n3. Plan the cake recipe.\n4. Reach out to friends to share the occasion.",
+    "reflection": "How can I make the most of this special occasion? What other ingredients or preparations might I need for the cake? How can I connect with my friends to share this moment?"
+  }
 }
