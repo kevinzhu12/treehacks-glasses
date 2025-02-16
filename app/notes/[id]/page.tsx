@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 export interface NoteContent {
@@ -65,7 +65,7 @@ export default function NotePage() {
       <div className="max-w-6xl mx-auto px-8 py-12">
         {/* Title section */}
         <p className="text-4xl font-bold mb-2 text-gray-800 tracking-tight">
-          {note.content.title}
+          note.content.title
         </p>
         <p className="text-gray-400 mb-8 text-md">{note.date}</p>
 
@@ -78,8 +78,7 @@ export default function NotePage() {
               fontFamily:
                 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
             }}
-          >
-            {note.content.body}
+          ><ReactMarkdown>{note.content.body}</ReactMarkdown>
           </div>
 
           {/* Additional notes sections */}
