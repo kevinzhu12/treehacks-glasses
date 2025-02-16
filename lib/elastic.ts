@@ -69,7 +69,7 @@ const ingestData = async (data: any) => {
 
 const searchFor = async (q: string) => {
     try {
-        // First check if index exists and get its mappings
+        // First check if index exists
         const indexExists = await client.indices.exists({
             index: "treehacks"
         });
@@ -79,12 +79,6 @@ const searchFor = async (q: string) => {
             return;
         }
 
-        const mappings = await client.indices.getMapping({
-            index: "treehacks"
-        });
-        console.log("Index mappings:", JSON.stringify(mappings, null, 2));
-
-        // Try a more general search query
         console.log("Searching for:", q);
         const searchResponse = await client.search({
             index: "treehacks",

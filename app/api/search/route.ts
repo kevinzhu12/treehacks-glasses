@@ -2,43 +2,28 @@ import { NextResponse } from "next/server";
 import { searchFor } from "@/lib/elastic";
 
 export async function GET(request: Request) {
-    const { searchParams } = new URL(request.url);
-    const query = searchParams.get("q");
+    try {
+        const { searchParams } = new URL(request.url);
+        const query = searchParams.get("q");
 
-    if (!query) {
+        if (!query) {
+            return NextResponse.json(
+                { error: "Query parameter is required" },
+                { status: 400 }
+            );
+        }
+
+        const searchResult = await searchFor(query);
+        
+        return NextResponse.json(searchResult);
+    } catch (error) {
+        console.error("Search error:", error);
         return NextResponse.json(
-            { error: "Query parameter is required" },
-            { status: 400 }
-        );
-    }
-
-    const searchResult = await searchFor(query);
-
-    if (!searchResult) {
-        return NextResponse.json(
-            { error: "Search failed" },
-            { status: 404 }
-        );
-    }
-
-    const hits = searchResult?.hits;
-
-    if (!hits) {
-        return NextResponse.json(
-            { error: "No results found" },
+            { 
+                error: "Search failed", 
+                details: error instanceof Error ? error.message : String(error) 
+            },
             { status: 500 }
         );
     }
-
-    const res = []
-    for (const hit of hits) {
-        res.push({
-            date: (hit["_source"] as any)["date"],
-            title: (hit["_source"] as any)["title"]
-        })
-    }
-
-    return NextResponse.json({
-        hits: res
-    });
 }
