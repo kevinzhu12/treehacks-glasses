@@ -34,7 +34,7 @@ export default function NotePage() {
         if (data && !data.error) {
           const loadedNote = {
             date: params.id as string,
-            content: data
+            content: data,
           };
           setNote(loadedNote);
         }
@@ -78,7 +78,6 @@ export default function NotePage() {
     "#FB1FFF",
   ];
 
-
   if (!note) {
     return (
       <main className="min-h-screen bg-[#faf9f6]">
@@ -103,10 +102,12 @@ export default function NotePage() {
             <span
               key={index}
               style={{
-                backgroundColor: `${tagColors[index % tagColors.length]}90`, // added opacity
-                fontFamily: 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
+                backgroundColor: `${tagColors[index % tagColors.length]}80`, // added opacity
+                color: `${tagColors[index % tagColors.length]}`,
+                fontFamily:
+                  'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
               }}
-              className="rounded-full px-2 py-1 text-sm text-white mr-1.5"
+              className="rounded-full px-2 py-1 text-sm mr-1.5 font-semibold"
             >
               {tag}
             </span>
@@ -122,7 +123,13 @@ export default function NotePage() {
               fontFamily:
                 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
             }}
-          ><ReactMarkdown className="content-body" remarkPlugins={[remarkBreaks]}>{note.content.body}</ReactMarkdown>
+          >
+            <ReactMarkdown
+              className="content-body card"
+              remarkPlugins={[remarkBreaks]}
+            >
+              {note.content.body}
+            </ReactMarkdown>
           </div>
 
           {/* Additional notes sections */}

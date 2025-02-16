@@ -1,14 +1,17 @@
 {
-    "nodes": [
-        {
-            "id": "1",
-            "references": [
-                ["Hello", "12-13-24"],
-                ["Thanks", "12-16-24"]
-            ]
-        }
-    ],
-    "edges": [
-        {"source": "1", "target": "2", "weight": 1}
-    ]
+  "nodes": [
+    {
+      "id": "Vectors",
+      "group": 1,
+      "content": "# Vectors \n A vector is a list of values."
+    },
+    {
+      "id": "Linear Independence",
+      "group": 1,
+      "content": "# Linear Independence \n A list of vectors is linearly independent if the only way to create a linear combination equal to zero is to set all constants multiplying the vectors to zero."
+    }
+  ],
+  "links": [
+    { "source": "Vectors", "target": "Linear Independence", "weight": 1 }
+  ]
 }

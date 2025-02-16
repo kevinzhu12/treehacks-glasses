@@ -8,6 +8,7 @@ import path from "path";
 const DATA_DIR = path.join(process.cwd(), "data");
 const TRANSCRIPT_FILE = path.join(DATA_DIR, "transcripts.json");
 const NOTES_FILE = path.join(DATA_DIR, "notes.json");
+const GRAPH_FILE = path.join(DATA_DIR, "connections.json");
 
 export interface NoteContent {
   title: string;
@@ -29,6 +30,10 @@ if (!fs.existsSync(TRANSCRIPT_FILE)) {
 }
 if (!fs.existsSync(NOTES_FILE)) {
   fs.writeFileSync(NOTES_FILE, JSON.stringify([]));
+}
+
+if (!fs.existsSync(GRAPH_FILE)) {
+  fs.writeFileSync(GRAPH_FILE, JSON.stringify([]));
 }
 
 export function getTranscripts(): string[] {
@@ -54,6 +59,17 @@ export function getAllNoteNames(): Record<string, string> {
     }, {} as Record<string, string>);
   } catch (error) {
     console.error("Error reading notes:", error);
+    return {};
+  }
+}
+
+export function getGraph(): Record<string, string[]> {
+  try {
+    const data = fs.readFileSync(GRAPH_FILE, "utf-8");
+    const graph: Record<string, string[]> = JSON.parse(data);
+    return graph;
+  } catch (error) {
+    console.error("Error reading graph:", error);
     return {};
   }
 }
@@ -92,6 +108,31 @@ export function writeNote(date: string, content: NoteContent): void {
   }
 }
 
+export function writeGraph(content: any): void {
+  try {
+    const data = fs.readFileSync(GRAPH_FILE, "utf-8");
+    const graph: Record<string, string[]> = JSON.parse(data);
+    graph["links"].push(content);
+
+    fs.writeFileSync(GRAPH_FILE, JSON.stringify(graph, null, 2));
+  } catch (error) {
+    console.error("Error saving graph:", error);
+    throw error;
+  }
+}
+
+export function writeNodes(content: any): void {
+  try {
+    const data = fs.readFileSync(GRAPH_FILE, "utf-8");
+    const graph: Record<string, string[]> = JSON.parse(data);
+    graph["nodes"].push(content);
+
+    fs.writeFileSync(GRAPH_FILE, JSON.stringify(graph, null, 2));
+  } catch (error) {
+    console.error("Error saving graph:", error);
+    throw error;
+  }
+}
 export function saveTranscripts(chunks: string[]): void {
   try {
     fs.writeFileSync(TRANSCRIPT_FILE, JSON.stringify(chunks, null, 2));

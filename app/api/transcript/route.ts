@@ -10,6 +10,8 @@ import {
   getAllNoteNames,
   writeNote,
   getNoteContent,
+  getGraph,
+  writeGraph,
 } from "@/lib/storage";
 import { buildNote } from "@/lib/notetaker";
 
@@ -49,21 +51,28 @@ export async function POST(request: Request) {
 
       //get existing notes here
       const noteNames = getAllNoteNames();
+      const currGraph = getGraph();
       const date = new Date().toISOString().slice(0, 10);
 
       if (date in noteNames) {
         const existingNote = getNoteContent(date);
-        const note = await buildNote(chunks, JSON.stringify(existingNote));
+        const [note, graph] = await buildNote(
+          chunks,
+          JSON.stringify(existingNote),
+          currGraph
+        );
+        console.log(note);
+        console.log("graph", graph);
+
+        writeNote(date, note);
+        writeGraph(graph);
+      } else {
+        const [note, graph] = await buildNote(chunks);
         console.log(note);
 
         writeNote(date, note);
-      }  else {
-        const note = await buildNote(chunks);
-        console.log(note);
-
-        writeNote(date, note);
+        writeGraph(graph);
       }
-
 
       clearTranscripts();
       return NextResponse.json({
