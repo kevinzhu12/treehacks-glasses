@@ -1,16 +1,108 @@
 {
-    "2025-10-23": {
-        "title": "note title",
-        "body": "HELLO THERE",
-        "snapshot": "snapshot",
-        "todos": "1. \n 2. \n 3. \n",
-        "reflection": "reflection"
+    "2025-02-15": {
+        "title": "Work and Reflection",
+        "body": "### 8:00 AM - Starting the Day\nI woke up feeling a little bit tired this morning, but I knew I had a lot to do, so I pushed myself to get moving. I started by reviewing the progress I’ve made in my research over the past week. It was a bit overwhelming at first, trying to wrap my head around everything I’d done, but it also felt rewarding. When I looked at the model results, I was pretty happy with how things were progressing, but I know there’s still a lot of work to be done.\n\n### 10:00 AM - Refining the Neural Network\nAfter reviewing the model, I decided to spend the first few hours of the day refining the neural network. I’ve been trying to adjust some hyperparameters to improve the accuracy, and it’s been a slow but steady process. I’ve learned a lot from experimenting with different configurations, but I keep hitting these small roadblocks where the model just doesn’t perform as well as I’d hoped.\n\n### 12:00 PM - Lunch Break\nAround lunchtime, I took a short break and grabbed a bite with a friend. We went to a nearby café, and it was nice to get out of my head for a little while. Sometimes I forget how much a small break can reset my mind. We ended up chatting about our classes and upcoming assignments, and it felt good to talk about something other than research for a change.\n\n### 1:30 PM - Back to the Grind\nWhen I got back to my desk, I dove back into the neural network adjustments. The afternoon was spent testing the model with a larger dataset. It was a bit nerve-wracking at first because I wasn’t sure if it would hold up under the new data, but thankfully, the results were promising. The model seemed to handle the larger dataset much better than I expected, and that gave me a little boost of motivation. I feel like I’m getting closer to where I need to be.\n\n### 4:30 PM - Taking a Walk\nAs the evening approached, I felt like I needed to step away from the screen for a bit. I’ve been spending so much time glued to the computer lately, and my eyes were starting to get sore. I decided to go for a walk outside to clear my head. It was a chilly evening, but the fresh air helped me unwind. I even took a few moments to just sit and watch the sunset. I’ve been trying to be more mindful lately, and little moments like that really help me put things into perspective.\n\n### 6:00 PM - Reflecting on Personal Growth\nWhen I got back to my apartment, I took a few minutes to reflect on my personal growth. This past week has been a bit of a rollercoaster, but I’ve realized how much I’ve improved in managing my time. In the past, I would have been stressing over every little thing, but now I’m learning to break things down into manageable chunks. I’m also starting to realize the importance of pacing myself so I don’t burn out. It’s so easy to get caught up in the grind and forget that taking care of myself is just as important.\n\n### 7:30 PM - Final Touches on the Research\nAfter my walk, I spent a bit more time working on the research. I refined some of the notes I’d made earlier in the week, documenting the changes I’ve made to the model and what still needs to be improved. I’m feeling pretty confident about the direction I’m headed, but there’s still a lot of uncertainty, and I think that’s part of the process. Sometimes it feels like I’m never going to get everything right, but when I look at where I started, it’s clear that I’ve made a lot of progress.\n\n### 9:00 PM - Evening Meeting with Classmate\nBy the time I wrapped up for the day, I felt a sense of accomplishment. Even though I didn’t solve every problem, I was able to move things forward. That’s the most I can ask for right now. I met up with a classmate later in the evening, and we talked about our upcoming projects for next week. It was really helpful to bounce ideas off each other, and I feel like I have a better idea of where to focus my efforts moving forward.\n\n### 10:30 PM - Reflecting on the Day\nAs I sat down to finally relax, I thought about how important it is to reflect on the day. It’s easy to get caught up in the rush of assignments and deadlines, but taking a moment to step back and appreciate the small victories is so crucial. I feel like I’ve learned a lot not just about my research, but about how to handle the pressure of college life in general. Tomorrow will be a new day, and I’m ready to take it on with a clearer head.",
+        "snapshot": "snapshot of work and reflection notes",
+        "todos": "1. Focus on time management \n 2. Continue research progress \n 3. Reflect on personal growth and goals",
+        "reflection": "I’m proud of the work I’ve done, and I need to continue balancing productivity with self-care. Today has been a reminder that progress isn’t always linear, but every step forward counts."
     },
-    "2025-10-22": {
-        "title": "my second note",
-        "body": "hello",
-        "snapshot": "snapshot",
-        "todos": "1. \n 2. \n 3. \n",
-        "reflection": "reflection"
+    "2025-02-10": {
+        "title": "Physics Quiz Prep",
+        "body": "Started the day with a quick review of Coulomb’s Law and the electric field equations. I spent the first couple of hours in the library going over dipole approximations, and I feel like I'm starting to get the hang of it.\n\nIn the afternoon, I worked through a set of practice problems to test my understanding of Gauss's law. I still had a few struggles with some of the more complex setups, but I think I’m getting closer to mastering the concepts.\n\nI’ll probably review some of my notes again tonight before bed, just to be sure I’m ready for the quiz tomorrow.",
+        "snapshot": "snapshot of quiz prep notes",
+        "todos": "1. Review Gauss’s law one more time \n 2. Test myself on dipole problems \n 3. Get a good night’s sleep before the quiz",
+        "reflection": "I’m feeling confident, but I’ll need to do some last-minute reviewing before the quiz. It’s been a productive day of prep!"
+    },
+    "2025-02-11": {
+        "title": "Quiz Day",
+        "body": "The day started with a little bit of anxiety, but I was able to relax after some morning coffee. I took one last look at my notes before heading to the lecture hall for the physics quiz.\n\nThe quiz itself went surprisingly smoothly. Some of the questions were trickier than I expected, but I was able to work through them methodically. I finished with a few minutes to spare and double-checked my answers.\n\nAfter the quiz, I met up with a classmate to talk about the questions. It helped calm my nerves knowing that we both felt pretty good about it. Now I’m just waiting for the results.",
+        "snapshot": "snapshot of completed quiz",
+        "todos": "1. Continue physics practice \n 2. Start working on research tasks for the week \n 3. Reflect on quiz performance",
+        "reflection": "I’m relieved the quiz is done, but I can’t stop here—I need to keep studying to reinforce my knowledge."
+    },
+    "2025-02-12": {
+        "title": "Research Milestone",
+        "body": "What a day! I finally made a breakthrough with my research model. I’ve been tweaking the neural network for weeks now, and it’s finally showing promising results. This afternoon, I tested the new model with a fresh set of data, and it performed even better than I expected.\n\nI spent the evening documenting my results, making sure everything was clear for my advisor. I’m planning to write up a report for our meeting tomorrow. I can’t wait to see what she thinks about the new approach.\n\nI also took a step back to reflect on the process. It hasn’t been easy, but this progress is motivating me to keep pushing forward.",
+        "snapshot": "snapshot of model results",
+        "todos": "1. Refine model for better accuracy \n 2. Write up results for advisor \n 3. Present findings at the end of the week",
+        "reflection": "It feels good to see some tangible results. I’m motivated to keep going!"
+    },
+    "2025-02-13": {
+        "title": "Errands and Research",
+        "body": "The day started with a few errands. I had to pick up some groceries and get a few supplies for the weekend, but I was able to knock it all out early in the morning. The rest of the day was spent in the lab working on my research.\n\nI’m making good progress on the new model, but there’s still a lot to refine. I spent a few hours testing some different configurations and analyzing the data. I also met with a colleague for a quick brainstorming session, which gave me some new ideas.\n\nBy the end of the day, I felt like I was on the right track. I still have a lot to do, but I’m excited about where this research is heading.",
+        "snapshot": "snapshot of research workspace",
+        "todos": "1. Organize research materials \n 2. Schedule meetings with collaborators \n 3. Continue analysis of data",
+        "reflection": "I need to keep a good work-life balance, and today felt like a productive mix of errands and research."
+    },
+    "2025-02-14": {
+        "title": "Valentine's Day with Friends",
+        "body": "Started the day with a little bit of research before the afternoon plans. I went over some new papers for my neuroscience project and took notes for future reference.\n\nIn the afternoon, I spent some time with friends. We had a small Valentine’s Day dinner. It was nice to take a break from all the work and just enjoy some good food and great company.\n\nWe laughed a lot and talked about our upcoming plans for the semester. It was a good reminder to take some time off and recharge.",
+        "snapshot": "snapshot of dinner gathering",
+        "todos": "1. Plan next meetup with friends \n 2. Continue with research tasks \n 3. Reflect on work/life balance",
+        "reflection": "Taking breaks and spending time with friends is essential for keeping my energy up. I’m feeling refreshed and ready to get back to work tomorrow."
+    },
+    
+    "2025-02-01": {
+        "title": "Research Update",
+        "body": "Spent the afternoon working on my research project. Finally made some progress with my RNN model, but there's still a lot to optimize.",
+        "snapshot": "snapshot of RNN model code",
+        "todos": "1. Test model with new dataset \n 2. Continue optimizing hyperparameters \n 3. Meet with advisor next week",
+        "reflection": "Need to spend more time on the training loop to avoid overfitting."
+    },
+    "2025-02-02": {
+        "title": "Study Session with Friends",
+        "body": "Studied with my friends at the library. We went over our physics problems for the upcoming quiz. It was productive, but we need to practice more on electric potential problems.",
+        "snapshot": "snapshot of study group notes",
+        "todos": "1. Review electric potential equations \n 2. Plan another study session \n 3. Practice more problems before quiz",
+        "reflection": "Group work is really helping, but I need to focus on understanding Gauss’s law better."
+    },
+    "2025-02-03": {
+        "title": "Errands Day",
+        "body": "Got some errands done today. Went grocery shopping, picked up a few things for the weekend. It’s always nice to get these little things off my list.",
+        "snapshot": "snapshot of grocery list",
+        "todos": "1. Organize notes for the week \n 2. Pack for the weekend trip \n 3. Do laundry",
+        "reflection": "It feels good to stay on top of my tasks, even when they seem small."
+    },
+    "2025-02-04": {
+        "title": "Physics 2 Quiz Prep",
+        "body": "Reviewed Coulomb’s Law and Gauss’s law today. I think I have a better understanding now, but I need to revisit the torque problems.",
+        "snapshot": "snapshot of physics textbook and notes",
+        "todos": "1. Revisit torque problems \n 2. Solve past quiz questions \n 3. Test myself on the electric field equations",
+        "reflection": "I’m feeling more confident but still need to clarify a few concepts before the quiz."
+    },
+    "2025-02-05": {
+        "title": "Dinner with Julia",
+        "body": "Had a great dinner with Julia. We tried a new charcuterie board recipe. She’s been really into biology lately, and we talked about some of her latest research ideas.",
+        "snapshot": "snapshot of charcuterie board",
+        "todos": "1. Help Julia with biology paper \n 2. Look into biology resources for her \n 3. Plan next dinner",
+        "reflection": "Always love catching up with Julia—her passion for biology is contagious."
+    },
+    "2025-02-06": {
+        "title": "Research Collaboration",
+        "body": "Met with a colleague to discuss potential collaboration on the neuroscience project. We brainstormed how to enhance the spatial embedding of the RNN. Excited to explore this further.",
+        "snapshot": "snapshot of meeting notes",
+        "todos": "1. Follow up with colleague on spatial embedding approach \n 2. Read up on new neuroscience techniques \n 3. Continue with own RNN work",
+        "reflection": "It’s always great to bounce ideas off others and refine my approach."
+    },
+    "2025-02-07": {
+        "title": "Physical Therapy",
+        "body": "Took some time off today to focus on physical therapy. My shoulder’s been bothering me, and I need to make sure I’m staying on top of it.",
+        "snapshot": "snapshot of therapy exercises",
+        "todos": "1. Continue with therapy exercises \n 2. Schedule follow-up appointment \n 3. Avoid straining shoulder during workouts",
+        "reflection": "It’s tough to slow down sometimes, but my body needs the recovery."
+    },
+    "2025-02-08": {
+        "title": "Weekend Trip",
+        "body": "Went on a weekend trip with friends. We explored the city, visited some cool museums, and had a blast. It was a nice break from everything.",
+        "snapshot": "snapshot of the museum visit",
+        "todos": "1. Catch up on research Monday \n 2. Go over notes from weekend trip \n 3. Organize thoughts for next week’s tasks",
+        "reflection": "I really needed this break. It helped me clear my mind and get a fresh perspective."
+    },
+    "2025-02-09": {
+        "title": "Weekend Reflection",
+        "body": "Reflecting on the weekend trip, I realized how much I enjoy exploring new places. It’s a good reminder to balance work with leisure.",
+        "snapshot": "snapshot of trip photos",
+        "todos": "1. Plan a weekend getaway in March \n 2. Organize photos from the trip \n 3. Reflect on weekend balance between work and relaxation",
+        "reflection": "Balancing work and play is important, and I need to make sure I take more breaks."
     }
 }

@@ -29,38 +29,35 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Text is required" }, { status: 400 });
     }
 
-    // saveTranscripts([text]);
-
     const chunks = getTranscripts();
 
-    console.log(chunks)
-
-    // chunks.push(text);
+    chunks.push(text);
 
     console.log(chunks);
 
-    // // If we exceed the maximum chunks, process the complete transcript
-    // if (chunks.length >= MAX_CHUNKS) {
-    //   // const completeTranscript = chunks.join(" ");
-    //   console.log("=== Complete Transcript ===");
-    //   // console.log(completeTranscript);
-    //   // console.log("=========================");
+    saveTranscripts(chunks);
 
-    //   // CALL THE LLM HERE
-    //   const note = await buildNote(chunks);
-    //   console.log(note);
+    // If we exceed the maximum chunks, process the complete transcript
+    if (chunks.length >= MAX_CHUNKS) {
+      // const completeTranscript = chunks.join(" ");
+      console.log("=== Complete Transcript ===");
+      // console.log(completeTranscript);
+      // console.log("=========================");
+
+      // CALL THE LLM HERE
+      // const note = await buildNote(chunks);
+      // console.log(note);
       
-      
 
-    //   // clearTranscripts();
-    //   return NextResponse.json({
-    //     status: "completed",
-    //     processedTranscript: note,
-    //   });
-    // }
+      // clearTranscripts();
+      return NextResponse.json({
+        status: "completed",
+        processedTranscript: "complete transcript",
+      });
+    }
 
-    // // Save the updated chunks
-    // saveTranscripts(chunks);
+    // Save the updated chunks
+    saveTranscripts(chunks);
 
     return NextResponse.json(
       {

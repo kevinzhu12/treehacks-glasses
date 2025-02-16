@@ -5,8 +5,9 @@ import * as dotenv from "dotenv";
 import { MAX_CHUNKS } from "@/app/api/transcript/route";
 
 dotenv.config();
-// import { config } from "dotenv";
-// config();
+
+// TAGS 
+const tags = ["joy", "excitement", "gratitude", "hope", "contentment", "love", "pride", "accomplishment", "anxiety", "worry", "frustration", "disappointment", "sadness", "grief", "anger", "confusion", "doubt", "relief", "nostalgia", "reflection", "introspection", "curiosity", "wonder", "determination", "vulnerability"];
 
 // const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY;
@@ -30,6 +31,7 @@ You will output the notes in the following JSON format:
     "snapshot": "Save the review here.",
     "todos": "1. \n 2. \n 3. \n",
     "reflection": "Add some reflection questions here."
+    "tags": "Label the notes with the appropriate tags from the following list: ${tags.join(", ")}"
 }
 
 It is important that you follow this format exactly, as it will be parsed by a computer. If you do not output the JSON in the correct format, the computer will not be able to parse it and the client will not be able to use your notes.

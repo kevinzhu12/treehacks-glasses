@@ -2,6 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 export interface NoteContent {
   title: string;
@@ -66,7 +67,7 @@ export default function NotePage() {
         <p className="text-4xl font-bold mb-2 text-gray-800 tracking-tight">
           {note.content.title}
         </p>
-        <p className="text-gray-400 mb-8 text-sm">{note.date}</p>
+        <p className="text-gray-400 mb-8 text-md">{note.date}</p>
 
         {/* Two-column notes layout */}
         <div className="grid grid-cols-[minmax(0,_550px)_minmax(0,_1fr)] gap-12">
