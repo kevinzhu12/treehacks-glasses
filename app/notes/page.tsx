@@ -9,16 +9,16 @@ export default function NotesHome() {
       <div style={{zIndex: 1}} className="graph-display">
           <Graph />
         </div>
-        <div className="absolute top-0 left-0 right-0 text-center" style={{zIndex: 2}}>
-          <h1 className="text-3xl font-semibold text-gray-800 mb-3">
-            Daily Notes
+        <div className="absolute left-0 right-0 text-center" style={{zIndex: 2, fontFamily : "PT Serif, Helvetica"}}>
+          <h1 style={{fontWeight: "bold", fontFamily: "DM Sans, Helvetica", fontSize: "3rem"}} className="text-3xl font-semibold text-gray-800 mb-3">
+            Wander
           </h1>
           <p className="text-base text-gray-400 mb-12">
-            Capture your thoughts and reflections
+            Capture your thoughts and reflections. Select an entry to begin.
           </p>
-          <h2 className="text-xl font-medium text-gray-400">
+          {/* <h2 className="text-xl font-medium text-gray-400">
             Select an entry to begin
-          </h2>
+          </h2> */}
         </div>
         
 
