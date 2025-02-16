@@ -78,7 +78,7 @@ export default function Sidebar({
               <div className="font-medium truncate">{date}</div>
               <div className="text-xs text-gray-400">{notes[date].title || "Untitled"}</div>
             </div>
-            <button
+            {/* <button
               onClick={(e) => deleteNote(date, e)}
               className="opacity-0 group-hover:opacity-100 ml-2 p-1 text-gray-400 hover:text-gray-600"
               aria-label="Delete note"
@@ -96,7 +96,7 @@ export default function Sidebar({
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </button>
+            </button> */}
           </Link>
         ))}
       </div>

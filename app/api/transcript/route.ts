@@ -41,6 +41,10 @@ export async function POST(request: Request) {
       console.log("=========================");
 
       // CALL THE LLM HERE
+      const response = await fetch(
+        ""
+      )
+      
 
       clearTranscripts();
       return NextResponse.json({

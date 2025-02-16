@@ -26,10 +26,11 @@ export default function NotesHome() {
       // console.log("Result Response: ", resultResponse);
 
       const result = await resultResponse.json();
-      console.log("Result: ", result);  
-      setResponse(result.choices[0].message.content);
+      console.log("Result IS HERE : ", result);  
+      setResponse(result.result);
       // console.log('response', result.body)
     } catch (error) {
+      console.log('tHERE IS AN ERROR?')
       console.error(error);
     }
   };
@@ -41,7 +42,6 @@ export default function NotesHome() {
           <h1 className="text-4xl font-bold mb-6 text-gray-800">Welcome</h1>
           <div>
             <button onClick={handleButtonClick}>Send Request</button>
-            {/* <p>Response: {response}</p> */}
             <Notes text={response} />
           </div>
         </div>

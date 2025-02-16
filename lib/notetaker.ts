@@ -10,18 +10,17 @@ You will use these outputs to generates notes for the day, building off (but als
 
 You will output the notes in the following JSON format:
 {
-    "title": "note title",
-    "body": "HELLO THERE",
-    "snapshot": "snapshot",
+    "title": "Insert Title",
+    "body": "Insert the body text here in markdown format.",
+    "snapshot": "Save the review here.",
     "todos": "1. \n 2. \n 3. \n",
-    "reflection": "reflection"
+    "reflection": "Add some reflection questions here."
 }
 
 PLEASE PLEASE PLEASE!!!! 
 It is important that you follow this format exactly, as it will be parsed by a computer. If you do not output the JSON in the correct format, the computer will not be able to parse it and the client will not be able to use your notes.
 PLEASE PLEASE PLEASE FOLLOW THIS!!!! IF YOU DON'T FOLLOW THIS I WILL LOSE MY JOB :(((
 `;
-
 
 
 /***
