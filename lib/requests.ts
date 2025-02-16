@@ -20,8 +20,9 @@ console.log("Mistral API Key loaded successfully:", MISTRAL_API_KEY);
 export async function sendMistralRequest(prompt: string) {
   //   const apiKey = OPENAI_API_KEY;
   const apiKey = MISTRAL_API_KEY;
-  const url = "https://api.openai.com/v1/chat/completions"; // which model
-
+  // const url = "https://api.openai.com/v1/chat/completions"; // which model
+  const url = "https://api.mistral.ai/v1/agents/completions"; // which model
+  
   //   const openai = new OpenAI({
   //     apiKey: OPENAI_API_KEY,
   //     organization: "org-b1Gmk5icrcBWrlROUnXXHJBE",
@@ -31,21 +32,30 @@ export async function sendMistralRequest(prompt: string) {
 
   const client = new Mistral({ apiKey: apiKey });
 
-  const response = await client.chat.complete({
-    model: "mistral-large-latest",
-    messages: [
-      {
-        role: "system",
-        content: "Reformat this conversation into a clear notes document.",
-      },
-      {
-        role: "user",
-        content: prompt,
-      },
-    ],
-    maxTokens: 100,
-  });
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${MISTRAL_API_KEY}`,
+    },
+    body: JSON.stringify({
+    // const response = await client.chat.complete({
+      // model: "mistral-large-latest",
+      "response_format": {"type": "text"},
+      messages: [
+          {
+            role: "system",
+            content: "Reformat this conversation into a clear notes document.",
+          },
+          {
+            role: "user",
+            content: prompt,
+          },
 
+        ],
+        max_tokens: 100,
+      }),
+    });
   //   const response = await fetch(url, {
   //     method: "POST",
   //     headers: {
@@ -69,21 +79,13 @@ export async function sendMistralRequest(prompt: string) {
   //     }),
   //   });
 
-  console.log("Response: ", response);
+  console.log("Response directly: ", response);
 
   // if (response.error) {
   //   throw new Error(`Error: ${response.error.message}`);
   // }
 
-  const data = response;
-
-  //   const newNote = {
-  //     id: Date.now(),
-  //     title: "New Note",
-  //     content: data.response,
-  //   };
-  //   setNotes((prevNotes) => [...prevNotes, newNote]);
-  //   setCurrentNote(newNote);
-
+  const data = await response.json();
+  console.log("Data: ", data);
   return data;
 }

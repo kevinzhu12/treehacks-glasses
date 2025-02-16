@@ -76,7 +76,7 @@ export default function Sidebar({
           >
             <div className="min-w-0 flex-1">
               <div className="font-medium truncate">{date}</div>
-              <div className="text-xs text-gray-400">{notes[date].title}</div>
+              <div className="text-xs text-gray-400">{notes[date].title || "Untitled"}</div>
             </div>
             <button
               onClick={(e) => deleteNote(date, e)}

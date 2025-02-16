@@ -15,15 +15,13 @@ export default function NotesLayout({
     async function fetchNotes() {
       const response = await fetch("/api/notes/all");
       const savedNotes = await response.json();
+      console.log("savedNotes", savedNotes);
       setNotes(savedNotes);
     }
 
     fetchNotes();
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("notes", JSON.stringify(notes));
-  }, [notes]);
 
   return (
     <div className="flex">

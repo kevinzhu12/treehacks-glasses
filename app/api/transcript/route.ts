@@ -9,10 +9,10 @@ import {
   clearTranscripts,
 } from "@/lib/storage";
 
-import { sendOpenAIRequest } from "../../../lib/requests";
+// import { sendOpenAIRequest } from "../../../lib/requests";
 import { useState } from "react";
 
-const MAX_CHUNKS = 25;
+export const MAX_CHUNKS = 25;
 
 export async function GET() {
   const chunks = getTranscripts();
@@ -40,18 +40,7 @@ export async function POST(request: Request) {
       console.log(completeTranscript);
       console.log("=========================");
 
-      // Here you can add more interesting logic, like:
-      // - Send to a language model for processing
-      // - Save to a permanent storage
-      // - Trigger other actions based on content
-      // try {
-      //     console.log("Sending request...")
-      //     const result = await sendOpenAIRequest('Hello!');
-      //     setResponse(result.choices[0].message.content);
-      //     console.log(response)
-      // } catch (error) {
-      //     console.error(error);
-      // }
+      // CALL THE LLM HERE
 
       clearTranscripts();
       return NextResponse.json({

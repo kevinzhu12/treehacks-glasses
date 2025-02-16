@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { sendOpenAIRequest } from "../../lib/requests";
+// import { sendOpenAIRequest } from "../../lib/requests";
+import { sendMistralRequest } from "../../lib/requests";
 import { redirect } from "next/navigation";
 import Notes from "../components/Notes";
 
@@ -15,15 +16,19 @@ export default function NotesHome() {
       const transcripts = await response.json();
       const prompt = transcripts.join(" ");
       console.log("Prompt: ", prompt);
-
-      const resultResponse = await fetch("/api/openai", {
+      
+      const resultResponse = await fetch("/api/mistral", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
       });
 
+      // console.log("Result Response: ", resultResponse);
+
       const result = await resultResponse.json();
+      console.log("Result: ", result);  
       setResponse(result.choices[0].message.content);
+      // console.log('response', result.body)
     } catch (error) {
       console.error(error);
     }
@@ -34,9 +39,6 @@ export default function NotesHome() {
       <div className="max-w-3xl mx-auto px-8 py-12">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-6 text-gray-800">Welcome</h1>
-          <div className="text-gray-500 mb-8">
-            Click "New Note" in the sidebar to start writing
-          </div>
           <div>
             <button onClick={handleButtonClick}>Send Request</button>
             {/* <p>Response: {response}</p> */}

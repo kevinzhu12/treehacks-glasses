@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export interface NoteContent {
   title: string;
@@ -18,53 +18,26 @@ export interface Note {
 
 export default function NotePage() {
   const params = useParams();
-  const titleRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  const [note, setNote] = useState<Note>({
-    date: new Date().toLocaleDateString(),
-    content: {
-      title: "Untitled",
-      content: "Transcribed content",
-      snapshot: "Notes overview",
-      todos: "Things to do.",
-      reflection: "Reflection Questions",
-    },
-  });
+  const [note, setNote] = useState<Note | null>(null);
 
   useEffect(() => {
-    const loadNote = () => {
-      async function _loadNote() {
-        const note = await (
-          await fetch("/api/notes/load?date=" + params.id)
-        ).json();
+    const loadNote = async () => {
+      if (!params.id) return;
 
-        console.log(note);
+      try {
+        const response = await fetch(`/api/notes/load?date=${params.id}`);
+        const data = await response.json();
 
-        if (note) {
-          setNote(note);
-          // if (titleRef.current)
-          //   titleRef.current.textContent = note.content.title;
-          // if (contentRef.current)
-          //   contentRef.current.textContent = note.content.content;
+        if (data && !data.error) {
+          const loadedNote = {
+            date: params.id as string,
+            content: data
+          };
+          setNote(loadedNote);
         }
+      } catch (error) {
+        console.error("Error loading note:", error);
       }
-
-      _loadNote();
-
-      // const notes = JSON.parse(localStorage.getItem("notes") || "[]");
-      // const currentNote = notes.find((n: any) => n.id === params.id);
-
-      // if (currentNote) {
-      //   setNote(currentNote);
-      //   if (titleRef.current) titleRef.current.textContent = currentNote.title;
-      //   if (contentRef.current)
-      //     contentRef.current.textContent = currentNote.content;
-      // } else {
-      //   if (titleRef.current) titleRef.current.textContent = "Untitled";
-      //   if (contentRef.current)
-      //     contentRef.current.textContent = "Start typing here...";
-      // }
     };
 
     loadNote();
@@ -76,111 +49,68 @@ export default function NotePage() {
     }
   };
 
-  // const saveNote = () => {
-  //   const notes = JSON.parse(localStorage.getItem("notes") || "[]");
-  //   const noteIndex = notes.findIndex((n: any) => n.id === params.id);
-
-  //   if (noteIndex >= 0) {
-  //     notes[noteIndex] = { ...note, id: params.id };
-  //   } else {
-  //     notes.push({ ...note, id: params.id });
-  //   }
-
-  //   localStorage.setItem("notes", JSON.stringify(notes));
-  // };
+  if (!note) {
+    return (
+      <main className="min-h-screen bg-[#faf9f6]">
+        <div className="max-w-6xl mx-auto px-8 py-12">
+          <p className="text-gray-400">Loading...</p>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-[#faf9f6]">
       <div className="max-w-6xl mx-auto px-8 py-12">
         {/* Title section */}
-        <div
-          ref={titleRef}
-          className="text-4xl font-bold mb-2 text-gray-800 tracking-tight focus:outline-none empty:before:content-['Untitled'] empty:before:text-gray-400"
-          contentEditable={true}
-          suppressContentEditableWarning={true}
-          onKeyDown={handleTitleKeyDown}
-          onBlur={(e) => {
-            const target = e.currentTarget;
-            if (target && target.textContent !== null) {
-              setNote((prev) => ({
-                ...prev,
-                title: target.textContent || "Untitled",
-              }));
-              // saveNote();
-            }
-          }}
-        />
-        <div className="text-gray-400 mb-8 text-sm">{note.date}</div>
+        <p className="text-4xl font-bold mb-2 text-gray-800 tracking-tight">
+          {note.content.title}
+        </p>
+        <p className="text-gray-400 mb-8 text-sm">{note.date}</p>
 
         {/* Two-column notes layout */}
         <div className="grid grid-cols-[minmax(0,_550px)_minmax(0,_1fr)] gap-12">
-          {/* Main notes content */}
+          {/* Main content */}
           <div
-            ref={contentRef}
             className="min-h-[500px] text-gray-800 text-lg leading-relaxed focus:outline-none break-words"
-            contentEditable={true}
-            suppressContentEditableWarning={true}
-            onBlur={(e) => {
-              const target = e.currentTarget;
-              if (target && target.textContent !== null) {
-                setNote((prev) => ({
-                  ...prev,
-                  content: target.textContent || "",
-                }));
-                // saveNote();
-              }
-            }}
             style={{
               fontFamily:
                 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
             }}
-          />
+          >
+            {note.content.body}
+          </div>
 
           {/* Additional notes sections */}
           <div className="space-y-8">
             {/* Snapshot section */}
             <div>
-              <h3 className="text-base font-semibold text-gray-800 mb-3">
+              <h3 className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Snapshot
               </h3>
-              <div
-                className="min-h-[120px] text-base text-gray-800 focus:outline-none  rounded-lg"
-                contentEditable={true}
-                suppressContentEditableWarning={true}
-                onBlur={(e) => {
-                  // Add snapshot saving logic here
-                }}
-              />
+              <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">
+                {note.content.snapshot}
+              </div>
             </div>
 
             {/* Todos section */}
             <div>
-              <h3 className="text-base font-semibold text-gray-800 mb-3">
+              <h3 className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Todos
               </h3>
-              <div
-                className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg"
-                contentEditable={true}
-                suppressContentEditableWarning={true}
-                onBlur={(e) => {
-                  // Add todos saving logic here
-                }}
-              />
+              <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg whitespace-pre-line">
+                {note.content.todos}
+              </div>
             </div>
 
             {/* Reflection section */}
             <div>
-              <h3 className="text-base font-semibold text-gray-800 mb-3">
+              <h3 className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Reflection
               </h3>
-              <div
-                className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg"
-                contentEditable={true}
-                suppressContentEditableWarning={true}
-                onBlur={(e) => {
-                  // Add reflection saving logic here
-                }}
-              />
+              <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">
+                {note.content.reflection}
+              </div>
             </div>
           </div>
         </div>

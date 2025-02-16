@@ -1,19 +1,22 @@
 "use client";
 
 import React, { useState } from 'react';
-import { sendOpenAIRequest } from '../../lib/requests';
+// import { sendOpenAIRequest } from '../../lib/requests';
+import { sendMistralRequest } from '../../lib/requests';
 
 export default function Testing() {
 	const [response, setResponse] = useState<string>('');
 
     const handleButtonClick = async () => {
         try {
-            const result = await sendOpenAIRequest('Hello!');
-            setResponse(result.choices[0].message.content);
+            const result = await sendMistralRequest('Hello!');
+            console.log(result);
+            setResponse("result.choices[0].message.content");
         } catch (error) {
             console.error(error);
         }
     };
+    
   return (
     <main className="min-h-screen bg-[#faf9f6]">
       <div className="max-w-3xl mx-auto px-8 py-12">
