@@ -1,3 +1,5 @@
+import { json } from "stream/consumers";
+
 // Configuration constants for the application
 export const MAX_CHUNKS = 10;
 
@@ -84,5 +86,23 @@ Here is what the raw chunks JSON will look like:
 You will return a list of links between nodes. Individual
 links will be of the format {"source": "title of node A", "target": "title of node B","value": 1}.
 
+You will output the links in the following JSON format:
+{"Links": [{
+    "source": "title of node A",
+    "target": "title of node B",
+    "value": 1
+  },
+  {
+    "source": "title of node A",
+    "target": "title of node B",
+    "value": 1
+  }, etc.
+]}
+  
+
+It is important that you follow this format exactly, as it will be parsed by a computer. If you do not output the JSON in the correct format, the computer will not be able to parse it and the client will not be able to use your notes.
 IF YOU DON'T FOLLOW THIS I WILL LOSE MY JOB!
+
+\`\`\`json
+
 `;

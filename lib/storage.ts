@@ -111,9 +111,22 @@ export function writeNote(date: string, content: NoteContent): void {
 export function writeGraph(content: any): void {
   try {
     const data = fs.readFileSync(GRAPH_FILE, "utf-8");
-    const graph: Record<string, string[]> = JSON.parse(data);
-    graph["links"].push(content);
+    const graph: Record<string, any> = JSON.parse(data);
 
+    content["Links"].forEach((link: any) => {
+      if (
+        !graph["links"].some((existingLink: any) => {
+          return (
+            existingLink.source === link.source &&
+            existingLink.target === link.target
+          );
+        })
+      ) {
+        graph["links"].push(link);
+      }
+    });
+
+    console.log("WE JUST ADDED TO GRAPH: ", content["Links"]);
     fs.writeFileSync(GRAPH_FILE, JSON.stringify(graph, null, 2));
   } catch (error) {
     console.error("Error saving graph:", error);
@@ -124,8 +137,23 @@ export function writeGraph(content: any): void {
 export function writeNodes(content: any): void {
   try {
     const data = fs.readFileSync(GRAPH_FILE, "utf-8");
-    const graph: Record<string, string[]> = JSON.parse(data);
+    const graph: Record<string, any> = JSON.parse(data);
+
+    // Check if node with same id already exists
+    const index = graph["nodes"].findIndex(
+      (node: any) => node.id === content["id"]
+    );
+    if (index !== -1) {
+      console.log(
+        "Node with id",
+        content["id"],
+        "already exists. Replacing it."
+      );
+      graph["nodes"].splice(index, 1);
+    }
+
     graph["nodes"].push(content);
+    console.log("Added new node with id", content["id"]);
 
     fs.writeFileSync(GRAPH_FILE, JSON.stringify(graph, null, 2));
   } catch (error) {
@@ -133,6 +161,7 @@ export function writeNodes(content: any): void {
     throw error;
   }
 }
+
 export function saveTranscripts(chunks: string[]): void {
   try {
     fs.writeFileSync(TRANSCRIPT_FILE, JSON.stringify(chunks, null, 2));

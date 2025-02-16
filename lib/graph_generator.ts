@@ -32,5 +32,6 @@ export async function sendMistralGraphRequest(prompt: string): Promise<string> {
     throw new Error("No choices returned from Mistral GRAPH API");
   }
 
+  console.log("GRAPH GENERATED:", output.choices[0].message.content);
   return output.choices[0].message.content as string;
 }

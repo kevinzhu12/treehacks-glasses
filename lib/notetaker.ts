@@ -50,17 +50,30 @@ const extractJSON = (str: string): string => {
   return jsonStr;
 };
 
-const getNodes = (cleanJSON: string) => {
+/**
+ * Converts a JSON string containing daily notes into a format suitable for
+ * the graph library. The JSON should have the following structure:
+ * {
+ *   "date string": {
+ *     title: string,
+ *     body: string,
+ *     snapshot: string,
+ *     todos: string,
+ *     reflection: string
+ *   }
+ * }
+ *
+ * The function returns an object with a single property, "nodes", which is
+ * an array of objects in the format required by the graph library.
+ */
+const getNodes = (
+  cleanJSON: string
+): { id: string; group: number; content: string } => {
+  console.log("raw json", cleanJSON);
   const jsonData = JSON.parse(cleanJSON);
+  console.log("JSON DATA", jsonData);
 
-  // Convert the entries into nodes array
-  const nodes = Object.values(jsonData).map((entry: any, index) => ({
-    id: entry.title,
-    group: index + 1, // Using index+1 as group number
-    content: entry.snapshot,
-  }));
-
-  return { nodes };
+  return { id: jsonData["title"], group: 1, content: jsonData["snapshot"] };
 };
 
 export const buildNote = async (
@@ -79,7 +92,7 @@ export const buildNote = async (
   try {
     const graph_prompt = buildGraphPrompt(cleanJSON, existingGraph);
     const graph_result = await sendMistralGraphRequest(graph_prompt);
-    console.log("Graph result",graph_result)
+    console.log("Graph result", graph_result);
     const graph_nodes = getNodes(cleanJSON);
     writeNodes(graph_nodes);
     return [JSON.parse(cleanJSON), JSON.parse(extractJSON(graph_result))];
