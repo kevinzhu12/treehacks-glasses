@@ -78,7 +78,18 @@ export function getNoteContent(date: string): NoteContent | null {
 //   }
 // }
 
-export function writeNote(date: string, content: NoteContent): void {}
+export function writeNote(date: string, content: NoteContent): void {
+  try {
+    const data = fs.readFileSync(NOTES_FILE, "utf-8");
+    const notes: Record<string, NoteContent> = JSON.parse(data);
+    notes[date] = content;
+
+    fs.writeFileSync(NOTES_FILE, JSON.stringify(notes, null, 2));
+  } catch (error) {
+    console.error("Error saving note:", error);
+    throw error;
+  }
+}
 
 export function saveTranscripts(chunks: string[]): void {
   try {

@@ -7,13 +7,10 @@ import {
   getTranscripts,
   saveTranscripts,
   clearTranscripts,
+  writeNote,
 } from "@/lib/storage";
 import { buildNote } from "@/lib/notetaker";
-
-// import { sendOpenAIRequest } from "../../../lib/requests";
-import { useState } from "react";
-
-export const MAX_CHUNKS = 5;
+import { MAX_CHUNKS } from "@/lib/config";
 
 export async function GET() {
   const chunks = getTranscripts();
@@ -21,7 +18,6 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  // const [response, setResponse] = useState<string>('');
   try {
     const text = await request.text();
 
@@ -30,29 +26,24 @@ export async function POST(request: Request) {
     }
 
     const chunks = getTranscripts();
-
     chunks.push(text);
 
-    console.log(chunks);
-
     saveTranscripts(chunks);
-
     // If we exceed the maximum chunks, process the complete transcript
     if (chunks.length >= MAX_CHUNKS) {
-      // const completeTranscript = chunks.join(" ");
       console.log("=== Complete Transcript ===");
-      // console.log(completeTranscript);
-      // console.log("=========================");
-
-      // CALL THE LLM HERE
-      // const note = await buildNote(chunks);
-      // console.log(note);
       
+      // CALL THE LLM HERE
+      const note = await buildNote(chunks);
+      console.log(note);
 
-      // clearTranscripts();
+      const date = new Date().toISOString().slice(0, 10);
+      writeNote(date, note);
+
+      clearTranscripts();
       return NextResponse.json({
         status: "completed",
-        processedTranscript: "complete transcript",
+        processedTranscript: note,
       });
     }
 
