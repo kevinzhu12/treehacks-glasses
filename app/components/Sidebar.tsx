@@ -11,15 +11,11 @@ export default function Sidebar({
   notes: Record<string, NoteContent>;
 }) {
   const pathname = usePathname();
-  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<any>(null);
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(
-        `/api/search?q=${encodeURIComponent(searchQuery)}`
-      );
       const response = await fetch(
         `/api/search?q=${encodeURIComponent(searchQuery)}`
       );
@@ -31,7 +27,6 @@ export default function Sidebar({
         data,
         total: data.total,
         hits: data.hits,
-        firstHit: data.hits?.[0],
         firstHit: data.hits?.[0],
       });
 
