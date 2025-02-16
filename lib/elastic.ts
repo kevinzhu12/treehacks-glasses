@@ -1,4 +1,4 @@
-// import { Client } from "@elastic/elasticsearch";
+import { Client } from "@elastic/elasticsearch";
 
 const client = new Client({
     node: 'https://my-elasticsearch-project-c8085e.es.us-east-1.aws.elastic.cloud:443',
@@ -98,7 +98,7 @@ const searchFor = async (q: string) => {
         console.log("Total hits:", searchResponse.hits.total);
         console.log("Search response:", JSON.stringify(searchResponse.hits, null, 2));
         
-        return searchResponse;
+        return searchResponse.hits;
     } catch (error) {
         console.error("Error during search:", error);
         throw error;

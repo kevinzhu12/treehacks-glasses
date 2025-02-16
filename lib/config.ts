@@ -40,7 +40,7 @@ You will output the notes in the following JSON format:
 {
     "title": "Insert Title",
     "body": "Insert the body text here in markdown format. Write a general timestamp at the start of each paragraph note, and add markdown formatting as needed.",
-    "snapshot": "Generate a summary of the notes",
+    "snapshot": "Generate a summary of the notes. Keep it under 5 sentences",
     "todos": "1. \n 2. \n 3. \n",
     "reflection": "Add some reflection questions here.",
     "tags": "Return a string list of max 4 tags out of these that describe the sentiment of the body: ${tags.join(

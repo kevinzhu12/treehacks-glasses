@@ -26,7 +26,10 @@ export default function NotePage() {
 
   const loadNote = async () => {
     if (!params.id) return;
-
+    try{
+        const response = await fetch(`/api/notes/load?date=${params.id}`);
+        const data = await response.json();
+        
         if (data && !data.error) {
           const loadedNote = {
             date: params.id as string,
@@ -34,13 +37,10 @@ export default function NotePage() {
           };
           setNote(loadedNote);
         }
-      } catch (error) {
-        console.error("Error loading note:", error);
-      }
     } catch (error) {
       console.error("Error loading note:", error);
     }
-  };
+  }
 
   useEffect(() => {
     loadNote();
@@ -92,10 +92,10 @@ export default function NotePage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#faf9f6]">
+    <main className="min-h-screen bg-[#faf9f6] card">
       <div className="max-w-6xl mx-auto px-8 py-12">
         {/* Title section */}
-        <p className="text-4xl font-bold mb-2 text-gray-800 tracking-tight">
+        <p className="text-4xl font-bold mb-2 text-gray-800 tracking-tight" >
           {note.content.title}
         </p>
         <p className="text-gray-400 mb-8 text-md">{note.date}</p>
@@ -117,7 +117,6 @@ export default function NotePage() {
           ))}
         </p>
 
-        {/* Two-column notes layout */}
         <div className="grid grid-cols-[minmax(0,_550px)_minmax(0,_1fr)] gap-12 pt-4 mt-4">
           {/* Main content */}
           <div
@@ -142,7 +141,7 @@ export default function NotePage() {
               <h3 className="text-md uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Snapshot
               </h3>
-              <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">
+              <div className="card min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg" >
                 {note.content.snapshot}
               </div>
             </div>
@@ -152,7 +151,7 @@ export default function NotePage() {
               <h3 className="text-md uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Todos
               </h3>
-              <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg whitespace-pre-line">
+              <div className="card min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg whitespace-pre-line">
                 {note.content.todos}
               </div>
             </div>
@@ -162,7 +161,7 @@ export default function NotePage() {
               <h3 className="text-md uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Reflection
               </h3>
-              <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">
+              <div className="card min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">
                 {note.content.reflection}
               </div>
             </div>
@@ -171,4 +170,4 @@ export default function NotePage() {
       </div>
     </main>
   );
-}
+  }

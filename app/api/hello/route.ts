@@ -1,10 +1,17 @@
-import { getGraph } from "@/lib/storage";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const graph = getGraph();
-
   return NextResponse.json({
-    graph,
+    message: "Hello, Next.js!",
+  });
+}
+
+export async function POST(request: Request) {
+  const body = await request.json();
+  
+  return NextResponse.json({
+    message: 'Received POST request',
+    data: body,
+    timestamp: new Date().toISOString(),
   });
 }

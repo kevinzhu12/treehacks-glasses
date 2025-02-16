@@ -1,5 +1,7 @@
 "use client";
 
+import Graph from "../graph/page"
+
 export default function NotesHome() {
   return (
     <main className="min-h-screen bg-[#faf9f6] flex items-center justify-center">
@@ -13,6 +15,7 @@ export default function NotesHome() {
         <h2 className="text-xl font-medium text-gray-400">
           Select an entry to begin
         </h2>
+        <Graph />
 
         {/* Subtle arrow pointing to sidebar */}
         <div className="absolute left-24 top-1/2 transform -translate-y-1/2 text-gray-300">

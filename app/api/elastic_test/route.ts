@@ -1,15 +1,16 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, Request } from 'next/server';
 import { searchFor } from '@/lib/elastic';
 
-export async function GET() {
+export async function GET(request: Request) {
     try {
-        const q = '';
+        const { searchParams } = new URL(request.url);
+        const q = searchParams.get('q') || '';
         const searchResponse = await searchFor(q);
 
         return NextResponse.json({
             success: true,
             query: q,
-            results: searchResponse?.hits,
+            results: searchResponse,
             timestamp: new Date().toISOString(),
         });
     } catch (error) {
