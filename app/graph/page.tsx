@@ -72,6 +72,40 @@ const Graph = () => {
     </div>
     // </main>
   );
+    return (
+        // <main style={{
+        //     position: "relative",
+        //     width: "100vw",
+        //     height: "100vh",
+        //     overflow: "hidden",
+        //     textAlign: "center"
+        // }}>
+        <div style={{
+            width: "100%",
+            height: "100%",
+            textAlign: "center",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 0
+        }}>
+            <ForceGraph3D
+                graphData={myData}
+                nodeLabel="id"
+                nodeAutoColorBy={"group"}
+                nodeResolution={20}
+                linkDirectionalParticles={150}
+                linkDirectionalParticleResolution={12}
+                backgroundColor="#FAF9F6"
+                // linkColor="#000000"
+                linkVisibility={true}
+                linkOpacity={1}
+                width={dimensions.width} 
+                height={dimensions.height}
+            />
+        </div>
+        // </main>
+    );
 };
 
 export default Graph;
