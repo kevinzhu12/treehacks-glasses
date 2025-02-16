@@ -17,7 +17,9 @@ export default function Sidebar({
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(
+        `/api/search?q=${encodeURIComponent(searchQuery)}`
+      );
       if (!response.ok) {
         throw new Error(`Search failed: ${response.status}`);
       }
@@ -26,7 +28,7 @@ export default function Sidebar({
         data,
         total: data.total,
         hits: data.hits,
-        firstHit: data.hits?.[0]
+        firstHit: data.hits?.[0],
       });
 
       if (data.error) {
@@ -42,14 +44,16 @@ export default function Sidebar({
         return acc;
       }, []);
 
-      uniqueHits.sort((a: any, b: any) => 
-        new Date(a._source.date).getTime() - new Date(b._source.date).getTime()
+      uniqueHits.sort(
+        (a: any, b: any) =>
+          new Date(a._source.date).getTime() -
+          new Date(b._source.date).getTime()
       );
 
       setSearchResults({
         ...data,
         hits: uniqueHits,
-        total: { value: uniqueHits.length }
+        total: { value: uniqueHits.length },
       });
     } catch (error) {
       console.error("Search error:", error);
@@ -57,13 +61,15 @@ export default function Sidebar({
   };
 
   // Sort notes by date
-  const sortedNotes = Object.entries(notes)
-    .sort(([dateA], [dateB]) => 
-      new Date(dateB).getTime() - new Date(dateA).getTime()
-    );
+  const sortedNotes = Object.entries(notes).sort(
+    ([dateA], [dateB]) => new Date(dateB).getTime() - new Date(dateA).getTime()
+  );
 
   return (
-    <nav style={{zIndex: 5}} className="sidebar w-64 h-screen border-r border-gray-200 dark:border-gray-700 fixed left-0 top-0 bg-[#faf9f6] dark:bg-gray-800 flex flex-col">
+    <nav
+      style={{ zIndex: 5 }}
+      className="sidebar w-64 h-screen border-r border-gray-200 dark:border-gray-700 fixed left-0 top-0 bg-[#faf9f6] dark:bg-gray-800 flex flex-col"
+    >
       <div className="p-4 border-b border-gray-200 dark:border-gray-700">
         <div className="relative">
           <input
@@ -71,7 +77,7 @@ export default function Sidebar({
             placeholder="Search notes..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
             className="w-full px-4 py-2 rounded-lg bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600
                     focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400
                     text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
@@ -101,7 +107,9 @@ export default function Sidebar({
         <div className="space-y-2">
           {searchResults ? (
             <div className="mb-4">
-              <h3 className="text-sm font-medium text-gray-500 mb-2">Search Results</h3>
+              <h3 className="text-sm font-medium text-gray-500 mb-2">
+                Search Results
+              </h3>
               {searchResults.total && searchResults.total.value > 0 ? (
                 searchResults.hits.map((hit: any, index: number) => (
                   <Link
@@ -115,7 +123,9 @@ export default function Sidebar({
                   >
                     <div className="min-w-0">
                       <div className="text-medium">{hit._source.title}</div>
-                      <div className="font-medium truncate">{hit._source.date}</div>
+                      <div className="font-medium truncate">
+                        {hit._source.date}
+                      </div>
                     </div>
                   </Link>
                 ))

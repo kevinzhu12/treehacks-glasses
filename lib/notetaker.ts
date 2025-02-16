@@ -74,12 +74,14 @@ const getNodes = (
   console.log("JSON DATA", jsonData);
 
   // Remove any dates from the title (e.g., "2025-02-15" or similar patterns)
-  const titleWithoutDate = jsonData["title"].replace(/\d{4}-\d{2}-\d{2}\s*-?\s*/, '').trim();
+  const titleWithoutDate = jsonData["title"]
+    .replace(/\d{4}-\d{2}-\d{2}\s*-?\s*/, "")
+    .trim();
 
-  return { 
-    id: titleWithoutDate, 
-    group: 1, 
-    content: jsonData["snapshot"] 
+  return {
+    id: titleWithoutDate,
+    group: 1,
+    content: jsonData["snapshot"],
   };
 };
 
