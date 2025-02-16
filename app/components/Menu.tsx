@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -38,15 +40,7 @@ export default function Menu() {
 
   return (
     <div className="fixed top-4 right-4 flex gap-3 z-50">
-      <button
-        onClick={toggleDarkMode}
-        style={{ fontFamily: "DM Sans, Helvetica" }}
-        className="px-4 py-2 bg-[#faf9f6] dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 
-                         text-gray-800 dark:text-white rounded-lg text-sm font-medium transition-colors
-                          hover:shadow-lg border border-gray-200 dark:border-gray-700"
-      >
-        {isDarkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+      <ThemeToggle />
       <button
         onClick={() => router.push("/notes")}
         style={{ fontFamily: "DM Sans, Helvetica" }}

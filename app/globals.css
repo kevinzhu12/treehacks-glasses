@@ -40,6 +40,7 @@
   --background: #0a0a0a;
   --foreground: #ededed;
   --card-color: #1a1a1a;
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,4 +90,9 @@ h1 {
 
 .graph-display {
   max-width: 80vw;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }

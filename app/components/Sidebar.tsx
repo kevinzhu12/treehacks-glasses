@@ -11,7 +11,6 @@ export default function Sidebar({
   notes: Record<string, NoteContent>;
 }) {
   const pathname = usePathname();
-  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<any>(null);
 
@@ -67,11 +66,11 @@ export default function Sidebar({
 
   return (
     <nav
-      style={{ zIndex: 5 }}
+      style={{ zIndex: 5, fontFamily: "DM Sans, Helvetica" }}
       className="sidebar w-64 h-screen border-r border-gray-200 dark:border-gray-700 fixed left-0 top-0 bg-[#faf9f6] dark:bg-gray-800 flex flex-col"
     >
       <div className="p-4 border-b border-gray-200 dark:border-gray-700">
-        <div className="relative">
+        <div className="relative flex items-center">
           <input
             type="text"
             placeholder="Search notes..."
@@ -82,25 +81,6 @@ export default function Sidebar({
                     focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400
                     text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
           />
-          <button
-            onClick={handleSearch}
-            className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-gray-500 hover:text-gray-700 transition-colors duration-200"
-          >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
         </div>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
