@@ -17,6 +17,7 @@ import { buildNote } from "@/lib/notetaker";
 
 // import { sendOpenAIRequest } from "../../../lib/requests";
 import { useState } from "react";
+// import { ingestData } from "@/lib/elastic";
 
 export const MAX_CHUNKS = 5;
 

@@ -23,13 +23,9 @@ export default function NotePage() {
   const params = useParams();
   const [note, setNote] = useState<Note | null>(null);
 
-  useEffect(() => {
-    const loadNote = async () => {
-      if (!params.id) return;
 
-      try {
-        const response = await fetch(`/api/notes/load?date=${params.id}`);
-        const data = await response.json();
+  const loadNote = async () => {
+    if (!params.id) return;
 
         if (data && !data.error) {
           const loadedNote = {
@@ -41,9 +37,16 @@ export default function NotePage() {
       } catch (error) {
         console.error("Error loading note:", error);
       }
-    };
+    } catch (error) {
+      console.error("Error loading note:", error);
+    }
+  };
 
+  useEffect(() => {
     loadNote();
+    setInterval(() => {
+      loadNote();
+    }, 1000)
   }, [params.id]);
 
   const handleTitleKeyDown = (e: React.KeyboardEvent) => {
