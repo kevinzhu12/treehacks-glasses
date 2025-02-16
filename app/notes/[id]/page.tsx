@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 
 export interface NoteContent {
   title: string;
@@ -10,6 +11,7 @@ export interface NoteContent {
   snapshot: string;
   todos: string;
   reflection: string;
+  tags: string[];
 }
 
 export interface Note {
@@ -65,27 +67,31 @@ export default function NotePage() {
       <div className="max-w-6xl mx-auto px-8 py-12">
         {/* Title section */}
         <p className="text-4xl font-bold mb-2 text-gray-800 tracking-tight">
-          note.content.title
+          {note.content.title}
         </p>
         <p className="text-gray-400 mb-8 text-md">{note.date}</p>
+
+        <p className="text-gray-400">
+          Tags: {note.content.tags.join(', ')}
+        </p>
 
         {/* Two-column notes layout */}
         <div className="grid grid-cols-[minmax(0,_550px)_minmax(0,_1fr)] gap-12">
           {/* Main content */}
           <div
-            className="min-h-[500px] text-gray-800 text-lg leading-relaxed focus:outline-none break-words"
+            className="min-h-[500px] text-gray-800 text-sm leading-relaxed focus:outline-none break-words"
             style={{
               fontFamily:
                 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
             }}
-          ><ReactMarkdown>{note.content.body}</ReactMarkdown>
+          ><ReactMarkdown className="content-body" remarkPlugins={[remarkBreaks]}>{note.content.body}</ReactMarkdown>
           </div>
 
           {/* Additional notes sections */}
           <div className="space-y-8">
             {/* Snapshot section */}
             <div>
-              <h3 className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-2">
+              <h3 className="text-md uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Snapshot
               </h3>
               <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">
@@ -95,7 +101,7 @@ export default function NotePage() {
 
             {/* Todos section */}
             <div>
-              <h3 className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-2">
+              <h3 className="text-md uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Todos
               </h3>
               <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg whitespace-pre-line">
@@ -105,7 +111,7 @@ export default function NotePage() {
 
             {/* Reflection section */}
             <div>
-              <h3 className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-2">
+              <h3 className="text-md uppercase tracking-wider text-gray-500 font-medium mb-2">
                 Reflection
               </h3>
               <div className="min-h-[120px] text-base text-gray-800 focus:outline-none rounded-lg">

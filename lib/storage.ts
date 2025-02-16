@@ -15,6 +15,7 @@ export interface NoteContent {
   snapshot: string;
   todos: string;
   reflection: string;
+  tags: string[];
 }
 
 // Ensure data directory exists

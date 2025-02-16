@@ -6,8 +6,8 @@ import { BEGINNING_PROMPT } from "./config";
 
 dotenv.config();
 
-const tags = ["joy", "excitement", "gratitude", "hope", "contentment", "love", "pride", "accomplishment", "anxiety", "worry", "frustration", "disappointment", "sadness", "grief", "anger", "confusion", "doubt", "relief", "nostalgia", "reflection", "introspection", "curiosity", "wonder", "determination", "vulnerability"];
 const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY;
+
 export { MISTRAL_API_KEY };
 
 console.log("Mistral API Key loaded successfully:", MISTRAL_API_KEY);
@@ -30,5 +30,9 @@ export async function sendMistralRequest(prompt: string): Promise<string> {
     ],
   });
 
-  return output.choices[0].message.content;
+  if (!output.choices || output.choices.length === 0) {
+    throw new Error("No choices returned from Mistral API");
+  }
+
+  return output.choices[0].message.content as string;
 }

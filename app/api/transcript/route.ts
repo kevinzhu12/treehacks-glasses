@@ -7,10 +7,16 @@ import {
   getTranscripts,
   saveTranscripts,
   clearTranscripts,
+  getAllNoteNames,
   writeNote,
+  getNoteContent,
 } from "@/lib/storage";
 import { buildNote } from "@/lib/notetaker";
-import { MAX_CHUNKS } from "@/lib/config";
+
+// import { sendOpenAIRequest } from "../../../lib/requests";
+import { useState } from "react";
+
+export const MAX_CHUNKS = 5;
 
 export async function GET() {
   const chunks = getTranscripts();
@@ -18,6 +24,7 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  // const [response, setResponse] = useState<string>('');
   try {
     const text = await request.text();
 
@@ -25,25 +32,45 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Text is required" }, { status: 400 });
     }
 
+    
+
     const chunks = getTranscripts();
+
     chunks.push(text);
 
+    console.log(chunks);
+
     saveTranscripts(chunks);
+
     // If we exceed the maximum chunks, process the complete transcript
     if (chunks.length >= MAX_CHUNKS) {
+      // const completeTranscript = chunks.join(" ");
       console.log("=== Complete Transcript ===");
-      
-      // CALL THE LLM HERE
-      const note = await buildNote(chunks);
-      console.log(note);
+      // console.log(completeTranscript);
+      // console.log("=========================");
 
+      //get existing notes here
+      const noteNames = getAllNoteNames();
       const date = new Date().toISOString().slice(0, 10);
-      writeNote(date, note);
 
-      clearTranscripts();
+      if (date in noteNames) {
+        const existingNote = getNoteContent(date);
+        const note = await buildNote(chunks, JSON.stringify(existingNote));
+        console.log(note);
+
+        writeNote(date, note);
+      }  else {
+        const note = await buildNote(chunks);
+        console.log(note);
+
+        writeNote(date, note);
+      }
+
+
+      // clearTranscripts();
       return NextResponse.json({
         status: "completed",
-        processedTranscript: note,
+        processedTranscript: "complete transcript",
       });
     }
 

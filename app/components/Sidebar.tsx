@@ -40,66 +40,33 @@ export default function Sidebar({
   //   router.push(`/notes/${id}`);
   // };
 
-  const deleteNote = (id: string, e: React.MouseEvent) => {
-    e.preventDefault(); // Prevent navigation from Link
 
-    // const existingNotes = JSON.parse(localStorage.getItem("notes") || "[]");
-    // const updatedNotes = existingNotes.filter((note: Note) => note.id !== id);
-    // localStorage.setItem("notes", JSON.stringify(updatedNotes));
-    // window.dispatchEvent(new Event("storage"));
-
-    // // If we're on the deleted note's page, redirect to /notes
-    // if (pathname === `/notes/${id}`) {
-    //   router.push("/notes");
-    // }
-  };
 
   return (
-    <nav className="w-64 h-screen border-r border-gray-200 p-4 fixed left-0 top-0 bg-[#faf9f6]">
-      {/* <button
-        onClick={createNewNote}
-        className="block mb-8 text-sm text-gray-500 hover:text-gray-800"
-      >
-        + New Note
-      </button> */}
+    <nav className="sidebar w-64 h-screen border-r border-gray-200 fixed left-0 top-0 bg-[#faf9f6] flex flex-col">
 
-      <div className="space-y-2">
-        {Object.keys(notes).map((date) => (
-          <Link
-            key={date}
-            href={`/notes/${date}`}
-            className={`group flex items-center justify-between p-2 rounded-lg text-sm ${
-              pathname === `/notes/${date}`
-                ? "bg-gray-100 text-gray-800"
-                : "text-gray-500 hover:bg-gray-50"
-            }`}
-          >
-            <div className="min-w-0 flex-1">
-              <div className="text-md">{notes[date] || "Untitled"}</div>
-              <div className="text-sm font-gray-400 truncate">{date}</div>
-              
-            </div>
-            {/* <button
-              onClick={(e) => deleteNote(date, e)}
-              className="opacity-0 group-hover:opacity-100 ml-2 p-1 text-gray-400 hover:text-gray-600"
-              aria-label="Delete note"
+      {/* Scrollable notes list */}
+      <div className="flex-1 overflow-y-auto p-4">
+        <div className="space-y-2">
+          {Object.keys(notes).map((date) => (
+            <Link
+              key={date}
+              href={`/notes/${date}`}
+              className={`group flex items-center justify-between p-2 rounded-lg text-sm ${
+                pathname === `/notes/${date}`
+                  ? "bg-gray-100 text-gray-800"
+                  : "text-gray-500 hover:bg-gray-50"
+              }`}
             >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button> */}
-          </Link>
-        ))}
+              <div className="min-w-0 flex-1">
+                <div className="text-medium sidebar">{notes[date]}</div>
+                <div className="font-medium truncate">{date}</div>
+                
+              </div>
+
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );

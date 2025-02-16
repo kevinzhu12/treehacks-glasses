@@ -61,3 +61,11 @@ body {
   font-family: "Cormorant", Helvetica, serif;
   margin: 1rem;
 }
+
+.content-body {
+  white-space: pre-wrap;
+}
+
+.sidebar {
+  background-color: #f1eee5;
+}
