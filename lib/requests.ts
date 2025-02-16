@@ -22,13 +22,6 @@ export async function sendMistralRequest(prompt: string) {
   const apiKey = MISTRAL_API_KEY;
   // const url = "https://api.openai.com/v1/chat/completions"; // which model
   const url = "https://api.mistral.ai/v1/agents/completions"; // which model
-  
-  //   const openai = new OpenAI({
-  //     apiKey: OPENAI_API_KEY,
-  //     organization: "org-b1Gmk5icrcBWrlROUnXXHJBE",
-  //     project: "$PROJECT_ID",
-  //     dangerouslyAllowBrowser: true,
-  //   });
 
   const client = new Mistral({ apiKey: apiKey });
 
@@ -56,28 +49,6 @@ export async function sendMistralRequest(prompt: string) {
         max_tokens: 100,
       }),
     });
-  //   const response = await fetch(url, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Authorization: `Bearer ${apiKey}`,
-  //     },
-  //     body: JSON.stringify({
-  //       model: "gpt-4o-mini",
-  //       messages: [
-  //         {
-  //           role: "system",
-  //           content:
-  //             "Reformat this conversation into a clear notes document with emojis.",
-  //         },
-  //         {
-  //           role: "user",
-  //           content: prompt,
-  //         },
-  //       ],
-  //       max_tokens: 100,
-  //     }),
-  //   });
 
   console.log("Response directly: ", response);
 
