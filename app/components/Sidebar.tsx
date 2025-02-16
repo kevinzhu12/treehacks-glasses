@@ -20,6 +20,9 @@ export default function Sidebar({
       const response = await fetch(
         `/api/search?q=${encodeURIComponent(searchQuery)}`
       );
+      const response = await fetch(
+        `/api/search?q=${encodeURIComponent(searchQuery)}`
+      );
       if (!response.ok) {
         throw new Error(`Search failed: ${response.status}`);
       }
@@ -28,6 +31,7 @@ export default function Sidebar({
         data,
         total: data.total,
         hits: data.hits,
+        firstHit: data.hits?.[0],
         firstHit: data.hits?.[0],
       });
 
@@ -67,7 +71,7 @@ export default function Sidebar({
 
   return (
     <nav
-      style={{ zIndex: 5 }}
+      style={{ zIndex: 5, fontFamily: "DM Sans, Helvetica" }}
       className="sidebar w-64 h-screen border-r border-gray-200 dark:border-gray-700 fixed left-0 top-0 bg-[#faf9f6] dark:bg-gray-800 flex flex-col"
     >
       <div className="p-4 border-b border-gray-200 dark:border-gray-700">
