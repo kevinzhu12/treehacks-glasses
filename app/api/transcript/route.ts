@@ -37,9 +37,9 @@ export async function POST(request: Request) {
 
     const chunks = getTranscripts();
 
-    const timestamp = new Date().getTime();
+    // const timestamp = new Date().getTime();
 
-    chunks.push(`${timestamp}: ${text}`);
+    chunks.push(`${text}`);
 
     saveTranscripts(chunks);
 

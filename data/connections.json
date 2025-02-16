@@ -17,7 +17,14 @@
       "id": "Quiz Day",
       "group": 5,
       "content": "Quiz Day\nThe day started with a knot of anxiety in my stomach, as it always does before quizzes, but the smell of freshly brewed morning coffee from the kitchen downstairs helped to soothe my nerves a little. ...",
-      "tags": ["quiz", "physics", "relief", "study", "anxiety", "happy"]
+      "tags": [
+        "quiz",
+        "physics",
+        "relief",
+        "study",
+        "anxiety",
+        "happy"
+      ]
     },
     {
       "id": "Research Milestone",
@@ -36,211 +43,359 @@
       "id": "Errands and Research",
       "group": 2,
       "content": "Errands and Research\nThe day started with a quick dash to run a few essential errands before the lab got too busy. I had to pick up some groceries for the week – mostly healthy snacks and ingredients for simple dinners – and also get a few lab supplies that were running low, specifically those specialized petri dishes we use for cell culturing experiments for another side-project. ...",
-      "tags": ["research"]
+      "tags": [
+        "research"
+      ]
     },
     {
       "id": "Valentine's Day with Friends",
       "group": 3,
       "content": "Valentine's Day with Friends\nStarted the day as usual, with a solid couple of hours of dedicated research before the afternoon’s Valentine's Day plans took over.  I decided to use the morning to dive into some new research papers related to my neuroscience project. ...",
-      "tags": ["friends", "social", "dinner"]
+      "tags": [
+        "friends",
+        "social",
+        "dinner"
+      ]
     },
     {
       "id": "Research Update",
       "group": 1,
       "content": "Research Update\nSpent the entire afternoon completely focused on working on my primary research project. I dedicated the time to tackling a particularly persistent issue I’ve been facing with my Recurrent Neural Network (RNN) model. ...",
-      "tags": ["research", "neural networks", "progress"]
+      "tags": [
+        "research",
+        "neural networks",
+        "progress"
+      ]
     },
     {
       "id": "Study Session with Friends",
       "group": 5,
       "content": "Study Session with Friends\nHeaded to the main university library this afternoon for a pre-quiz study session with my usual physics study group, consisting of Liam and Sarah. We specifically decided to focus on going over complex physics problems in preparation for the upcoming Physics 2 quiz scheduled for next week. ...",
-      "tags": ["study group", "physics", "study", "friends", "social"]
+      "tags": [
+        "study group",
+        "physics",
+        "study",
+        "friends",
+        "social"
+      ]
     },
     {
       "id": "Errands Day",
       "group": 2,
       "content": "Errands Day\nDedicated a significant chunk of today to just getting necessary errands done and out of the way early in the week.  First thing in the morning, I went grocery shopping at the local supermarket, stocking up on essential groceries for the week ahead - mainly healthy lunch and dinner ingredients. ...",
-      "tags": ["errands", "planning", "organization"]
+      "tags": [
+        "errands",
+        "planning",
+        "organization"
+      ]
     },
     {
       "id": "Physics 2 Quiz Prep",
       "group": 5,
       "content": "Physics 2 Quiz Prep\nSpent a focused block of time today specifically dedicated to preparing for the upcoming Physics 2 quiz this Friday.  I methodically reviewed the core concepts of Coulomb’s Law and Gauss’s law in detail from the textbook and my lecture notes, working through example problems step-by-step. ...",
-      "tags": ["physics", "quiz prep", "study"]
+      "tags": [
+        "physics",
+        "quiz prep",
+        "study"
+      ]
     },
     {
       "id": "Dinner with Julia",
       "group": 3,
       "content": "Dinner with Julia\nHad a thoroughly enjoyable and intellectually stimulating dinner with my friend Julia this evening at her apartment. We decided to try out a new and somewhat ambitious charcuterie board recipe she found online.  ...",
-      "tags": ["dinner", "social", "friends"]
+      "tags": [
+        "dinner",
+        "social",
+        "friends"
+      ]
     },
     {
       "id": "Research Collaboration",
       "group": 1,
       "content": "Research Collaboration\nHad a very productive and insightful meeting with Dr. Ramirez, a senior colleague in the Neuroscience department, to seriously discuss a potential formal collaboration on my current neuroscience research project.  ...",
-      "tags": ["research", "collaboration", "neuroscience"]
+      "tags": [
+        "research",
+        "collaboration",
+        "neuroscience"
+      ]
     },
     {
       "id": "Physical Therapy",
       "group": 6,
       "content": "Physical Therapy\nTook a necessary and deliberate chunk of time off from focused academic work today to prioritize my physical well-being and specifically focus on attending my regular physical therapy session. ...",
-      "tags": ["physical therapy", "self-care", "health"]
+      "tags": [
+        "physical therapy",
+        "self-care",
+        "health"
+      ]
     },
     {
       "id": "Weekend Trip",
       "group": 3,
       "content": "Weekend Trip\nFinally embarked on a long-awaited weekend trip with a close group of friends! We drove out to a nearby city we hadn’t explored before – Ashtonville.  ...",
-      "tags": ["weekend", "trip", "friends", "social"]
+      "tags": [
+        "weekend",
+        "trip",
+        "friends",
+        "social"
+      ]
     },
     {
       "id": "Weekend Reflection",
       "group": 4,
       "content": "Weekend Reflection\nSpending a quiet Sunday afternoon reflecting on the past weekend trip to Ashtonville.  Looking back at all the fun activities and relaxed moments, I genuinely realized and appreciated just how much I inherently enjoy exploring new places and experiencing different environments. ...",
-      "tags": ["weekend", "reflection", "leisure"]
+      "tags": [
+        "weekend",
+        "reflection",
+        "leisure"
+      ]
     },
     {
       "id": "Web Development Challenges and Personal Reflections",
       "group": 1,
       "content": "Web Development Challenges and Personal Reflections\n**10:30 AM:** Encountered an issue with web development project. Chrome does not support 2D matrices for WebGPU, while Safari does. This discrepancy is causing compatibility issues.\n\n**11:00 AM:** Need to investigate the caching benefits and potential solutions for the matrix support issue. Considering alternatives to ensure cross-browser compatibility.\n\n**12:00 PM:** Discussed the issue with the team. The caching benefits in Safari are significant, especially for storing 2D matrices. However, Chrome's lack of support is problematic. Need to explore why the model file needs to be downloaded and how to optimize this process.\n\n**1:00 PM:** Realized that the model file is quite large (40 MB), which might be causing performance issues. Need to find a way to reduce the file size or optimize the download process.\n\n**2:00 PM:** Adding real-time diffusion features to the website. The problem persists with Chrome not supporting 2D matrices for WebGPU. The caching benefits in Safari are much better, but the model file download is still a concern. The model file runs at around 15-16 diffusion frames, which is acceptable but needs optimization.\n\n**3:00 PM:** Revisited the real-time diffusion feature and discussed optimization strategies with the team. The caching benefits in Safari are still superior, but the model file download remains a bottleneck. Considering alternative approaches to handle the 40 MB model file efficiently.\n\n**4:00 PM:** Tested the real-time diffusion feature across different browsers. The feature works well in Safari but faces issues in Chrome due to the lack of 2D matrix support. Need to find a workaround for Chrome compatibility.\n\n**5:00 PM:** Explored potential solutions for reducing the model file size. Compression techniques and optimizing the download process are being considered. The goal is to improve performance and ensure a smoother user experience across all browsers.\n\n**6:00 PM:** Continued adding real-time diffusion features to the website. The issue with Chrome not supporting 2D matrices for WebGPU persists. The caching benefits in Safari are significant, but the need to download the 40 MB model file is a concern. The feature runs at around 15-16 diffusion frames, which is acceptable but requires optimization.\n\n**7:00 PM:** Discussed the real-time diffusion feature with a colleague. Emphasized the need to optimize the model file download process and ensure cross-browser compatibility. The feature is a favorite and adding it to the website is a priority.\n\n**8:00 PM:** Reflected on personal life. Discussed dating advice and personal relationships. Considered the importance of communication and emotional well-being.\n\n**9:00 PM:** Had a conversation about dating and relationships. Mentioned receiving amazing dating advice over the summer. Reflected on a recent date and the mixed signals received.\n\n**10:00 PM:** Discussed the fear and anxiety associated with asking someone out. Reflected on the complexity of relationships and the importance of clear communication.\n\n**11:00 PM:** Additional reflection on personal relationships and the challenges of asking someone out. Emphasized the fear and anxiety associated with it.\n\n**12:00 AM:** Spent time troubleshooting the diffusion model. The activation function used was causing convergence issues. The issue was traced back to a constant in the CUDA kernel being slightly off, which affected the entire model's performance.\n\n**1:00 AM:** Further discussed the importance of the real-time diffusion feature and the need for optimization. The feature is a favorite and adding it to the website is a priority.\n\n**2:00 AM:** Reflected on personal life and the desire for a girlfriend. Discussed the fear and anxiety associated with asking someone out and the complexity of relationships.",
-      "tags": ["web development", "technical", "reflection"]
-    },
-    {
-      "id": "Continued Debugging and Exploration of Graph Structures",
-      "group": 1,
-      "content": "The day was primarily spent debugging various technical issues related to graphs and JSON parsing. There were discussions about project names and minor design changes. The sentiment was marked by frustration and confusion, with brief moments of levity. The team continued to seek solutions and support each other throughout the day. Additional discussions included the challenges of using genes for generalization, message passing functions, and the idea of treating images as graph structures. The team also debated the use of transformers in graph structures and the need for a clear methodology to aggregate features from surrounding nodes. There were also discussions about personal projects and the desire to focus on personal agency. The team expressed acceptance of the current situation and frustration with the concept of AGI. New snippets indicated continued discussions on method changes and startup considerations. There were moments of humor and fun, with the team discussing the use of vim live share and its benefits. There was also a sense of excitement and agreement among the team members. In the latest snippets, there were also feelings of frustration and confusion as the team worked on the Note taker storage and pushing changes to the main branch.",
-      "tags": ["debugging", "graph structures", "technical"]
+      "tags": [
+        "web development",
+        "technical",
+        "reflection"
+      ]
     },
     {
       "id": "Hiking and Nature Break",
       "group": 1,
       "content": "The day was primarily spent debugging various technical issues related to graphs and JSON parsing. There were discussions about project names and minor design changes. The sentiment was marked by frustration and confusion, with brief moments of levity. The team continued to seek solutions and support each other throughout the day. Additional discussions included the challenges of using genes for generalization, message passing functions, and the idea of treating images as graph structures. The team also debated the use of transformers in graph structures and the need for a clear methodology to aggregate features from surrounding nodes. There were also discussions about personal projects and the desire to focus on personal agency. The team expressed acceptance of the current situation and frustration with the concept of AGI. New snippets indicated continued discussions on method changes and startup considerations. There were moments of humor and fun, with the team discussing the use of vim live share and its benefits. There was also a sense of excitement and agreement among the team members. In the latest snippets, there were also feelings of frustration and confusion as the team worked on the Note taker storage and pushing changes to the main branch.",
-      "tags": ["hiking", "nature", "break"]
+      "tags": [
+        "hiking",
+        "nature",
+        "break"
+      ]
     },
     {
       "id": "Month End Reflection and Planning",
       "group": 1,
       "content": "Hello",
-      "tags": ["reflection", "planning"]
+      "tags": [
+        "reflection",
+        "planning"
+      ]
     },
     {
       "id": "Neural Networks",
       "group": 7,
       "content": "Topic: Neural Networks",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
     },
     {
       "id": "Physics Study",
       "group": 7,
       "content": "Topic: Physics Study",
-      "tags": ["academic", "physics", "study"]
+      "tags": [
+        "academic",
+        "physics",
+        "study"
+      ]
     },
     {
       "id": "Social Activities",
       "group": 7,
       "content": "Topic: Social Activities",
-      "tags": ["social", "friends", "leisure"]
+      "tags": [
+        "social",
+        "friends",
+        "leisure"
+      ]
     },
     {
       "id": "Personal Health",
       "group": 7,
       "content": "Topic: Personal Health",
-      "tags": ["health", "self-care", "wellness"]
+      "tags": [
+        "health",
+        "self-care",
+        "wellness"
+      ]
     },
     {
       "id": "Research Projects",
       "group": 7,
       "content": "Topic: Research Projects",
-      "tags": ["research", "academic", "science"]
+      "tags": [
+        "research",
+        "academic",
+        "science"
+      ]
     },
     {
       "id": "Physics Quiz Prep",
       "group": 7,
       "content": "Topic: Physics Quiz Prep",
-      "tags": ["academic", "physics", "quiz prep"]
+      "tags": [
+        "academic",
+        "physics",
+        "quiz prep"
+      ]
     },
     {
       "id": "Transformer Model Implementation",
       "group": 1,
       "content": "Transformer Model Implementation",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
     },
     {
       "id": "Revisiting RNN Optimization",
       "group": 1,
       "content": "Revisiting RNN Optimization",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
     },
     {
       "id": "Debugging Deep Dive",
       "group": 1,
       "content": "Debugging Deep Dive",
-      "tags": ["debugging", "technical"]
+      "tags": [
+        "debugging",
+        "technical"
+      ]
     },
     {
       "id": "Advisor Meeting Prep",
       "group": 1,
       "content": "Advisor Meeting Prep",
-      "tags": ["academic", "meeting prep"]
+      "tags": [
+        "academic",
+        "meeting prep"
+      ]
     },
     {
       "id": "Advisor Meeting and Weekend Kickoff",
       "group": 1,
       "content": "Advisor Meeting and Weekend Kickoff",
-      "tags": ["academic", "meeting"]
+      "tags": [
+        "academic",
+        "meeting"
+      ]
     },
     {
       "id": "Data Augmentation Implementation",
       "group": 1,
       "content": "Data Augmentation Implementation",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
     },
     {
       "id": "Interpretability Exploration",
       "group": 1,
       "content": "Interpretability Exploration",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
     },
     {
       "id": "SHAP Implementation and Comparison",
       "group": 1,
       "content": "SHAP Implementation and Comparison",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
     },
     {
       "id": "Research Report Draft",
       "group": 1,
       "content": "Research Report Draft",
-      "tags": ["academic", "research report"]
+      "tags": [
+        "academic",
+        "research report"
+      ]
     },
     {
       "id": "Physics Study Group - Torque Focus",
       "group": 1,
       "content": "Physics Study Group - Torque Focus",
-      "tags": ["academic", "physics", "study group"]
+      "tags": [
+        "academic",
+        "physics",
+        "study group"
+      ]
     },
     {
       "id": "Research Report Finalization and Weekend Start",
       "group": 1,
       "content": "Research Report Finalization and Weekend Start",
-      "tags": ["academic", "research report"]
+      "tags": [
+        "academic",
+        "research report"
+      ]
     },
     {
       "id": "Downtime and Personal Projects",
       "group": 1,
       "content": "Downtime and Personal Projects",
-      "tags": ["personal projects", "downtime"]
+      "tags": [
+        "personal projects",
+        "downtime"
+      ]
     },
     {
       "id": "Report Feedback and New Research Direction",
       "group": 1,
       "content": "Report Feedback and New Research Direction",
-      "tags": ["academic", "research direction"]
+      "tags": [
+        "academic",
+        "research direction"
+      ]
     },
     {
       "id": "Transformer Training and Optimization",
       "group": 1,
       "content": "Transformer Training and Optimization",
-      "tags": ["technical", "research", "ai"]
+      "tags": [
+        "technical",
+        "research",
+        "ai"
+      ]
+    },
+    {
+      "id": "Continued Debugging and Exploration of Graph Structures",
+      "group": 1,
+      "content": "The day was primarily spent debugging various technical issues related to graphs and JSON parsing. There were discussions about project names and minor design changes. The sentiment was marked by frustration and confusion, with brief moments of levity. The team continued to seek solutions and support each other throughout the day. Additional discussions included the challenges of using genes for generalization, message passing functions, and the idea of treating images as graph structures. The team also debated the use of transformers in graph structures and the need for a clear methodology to aggregate features from surrounding nodes. There were also discussions about personal projects and the desire to focus on personal agency. The team expressed acceptance of the current situation and frustration with the concept of AGI. New snippets indicated continued discussions on method changes and startup considerations. There were moments of humor and fun, with the team discussing the use of vim live share and its benefits. There was also a sense of excitement and agreement among the team members. In the latest snippets, there were also feelings of frustration and confusion as the team worked on the Note taker storage and pushing changes to the main branch."
+    },
+    {
+      "id": "Daily Notes",
+      "group": 1,
+      "content": "The day involved discussions on treating images as graph structures and expressing gratitude. There was also mention of exploring ideas and drawing structures. Later, there was confusion and humor regarding a conversation about web development challenges and personal reflections. Additional moments included laughing at a funny situation, discussing dating advice, joking about a typo in coding, and reflecting on personal experiences. Theoretical discussions and humorous analogies were also part of the day. The conversation also touched on the importance of wearing glasses and the desire for a genuine boyfriend, with insightful reflections on relationships. There were also moments of excitement, pondering what to talk about next, and adjusting the brightness of a display."
+    },
+    {
+      "id": "Talking about TreeHacks and Brainstorming Ideas",
+      "group": 1,
+      "content": "The day started with a conversation about building for TreeHacks. Topics discussed included logging, reducing delay in camera and zoom features, and improving user experience with transitions. Excitement was expressed during the brainstorming session."
+    },
+    {
+      "id": "TreeHacks Project Discussion",
+      "group": 1,
+      "content": "The day began with a team check-in and discussions about the TreeHacks project, Mirror. Positive feedback was received on the glasses design, and the team engaged in a countdown, likely for a meeting or presentation."
+    },
+    {
+      "id": "TreeHacks Project Discussion and Feedback",
+      "group": 1,
+      "content": "The day began with a team check-in and discussions about the TreeHacks project, Mirror. Positive feedback was received on the glasses design, and the team engaged in a countdown, likely for a meeting or presentation. Claire introduced the smart glasses to someone, explaining their features and capabilities. The team received more positive feedback and discussed potential improvements. Later, there was a detailed discussion about the project's pricing and zoom features, focusing on the graph view and its potential limitations. The team also discussed adding animations and the voice-over for the video."
     }
   ],
   "links": [
@@ -362,6 +517,71 @@
     {
       "source": "Physics Quiz Prep",
       "target": "Continued Debugging and Exploration of Graph Structures",
+      "value": 1
+    },
+    {
+      "source": "Daily Notes",
+      "target": "Work and Reflection",
+      "value": 1
+    },
+    {
+      "source": "Daily Notes",
+      "target": "Physics Quiz Prep",
+      "value": 1
+    },
+    {
+      "source": "Work and Reflection",
+      "target": "Daily Notes",
+      "value": 1
+    },
+    {
+      "source": "Physics Quiz Prep",
+      "target": "Daily Notes",
+      "value": 1
+    },
+    {
+      "source": "Work and Reflection",
+      "target": "Talking about TreeHacks and Brainstorming Ideas",
+      "value": 1
+    },
+    {
+      "source": "Talking about TreeHacks and Brainstorming Ideas",
+      "target": "Work and Reflection",
+      "value": 1
+    },
+    {
+      "source": "TreeHacks Project Discussion",
+      "target": "Work and Reflection",
+      "value": 1
+    },
+    {
+      "source": "TreeHacks Project Discussion",
+      "target": "Physics Quiz Prep",
+      "value": 1
+    },
+    {
+      "source": "Work and Reflection",
+      "target": "TreeHacks Project Discussion",
+      "value": 1
+    },
+    {
+      "source": "Physics Quiz Prep",
+      "target": "TreeHacks Project Discussion",
+      "value": 1
+    },
+    {
+      "source": "Work and Reflection",
+      "target": "TreeHacks Project Discussion and Feedback",
+      "value": 1
+    },
+    {
+      "source": "TreeHacks Project Discussion and Feedback",
+      "target": "Physics Quiz Prep",
+      "value": 1
+    },
+    {
+      "source": "TreeHacks Project Discussion and Feedback",
+      "target": "Work and Reflection",
       "value": 1
     }
   ]
