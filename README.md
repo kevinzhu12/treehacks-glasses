@@ -6,10 +6,7 @@ Mirror is an AI-powered app compatible on all AugmentOS-enabled smart glasses wh
 
 *by: Sarah Su, Claire Wang, Kevin Zhu, Sanjith Udupa*
 
-**Watch our video:**
-
-[![Video](https://img.youtube.com/vi/3FzmbTFD_9I/maxresdefault.jpg)](https://www.youtube.com/watch?v=3FzmbTFD_9I)
-
+![Cover photo](https://github.com/kevinzhu12/treehacks-glasses/blob/main/public/readme/mirror_cover.png)
 
 Mirror is built in 3 parts:
 
@@ -17,9 +14,13 @@ The AugmentOS Smart Glasses Client is an Android application written in Java whi
 
 The backend is written in TypeScript via NextJS and handles interactions with both the smart glasses client and the web interface. Using ElasticSearch, Mistral AI, Vercel’s NextJS, and Codeium’s Windsurf, we created an intuitive interface to interact with your thoughts throughout the day.
 
+![Cover photo](https://github.com/kevinzhu12/treehacks-glasses/blob/main/public/readme/notes_sc.png)
+
+**Watch our video:**
+
+[![Video](https://img.youtube.com/vi/3FzmbTFD_9I/maxresdefault.jpg)](https://www.youtube.com/watch?v=3FzmbTFD_9I)
+
+
 Link to [Android app repo](https://github.com/sarahjsu/tree_augmentos).
 
-
-```bash
-npm run dev
-```
+You can run the app yourself by using Android Studio (and combining the AugmentOS/Core app on an android phone with any smart glasses that has a mic) and sending a Pinggy tunnel to our web server. 
