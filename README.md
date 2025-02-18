@@ -10,9 +10,16 @@ Mirror is an AI-powered app compatible on all AugmentOS-enabled smart glasses wh
 
 Mirror is built in 3 parts:
 
+*Taken from our [devpost](https://devpost.com/software/mirror-lmd54a?_gl=1*xzq0j*_gcl_au*MTE0ODY3OTU5MC4xNzM5NzY1MDQ3*_ga*MTUxMzc3MjMyMC4xNzM5NzY1MDQ4*_ga_0YHJK3Y10M*MTczOTc2NTA0Ny4xLjEuMTczOTc2NTA4Mi4wLjAuMA)*
+
 The AugmentOS Smart Glasses Client is an Android application written in Java which handles the interface with the smart glasses – handling both the voice transcription and relaying text back to the user via the display. Shoutout to the [Mentra](https://mentra.glass/) team for providing mentorship and lending us the [Even Realities G1](https://www.evenrealities.com/g1) Glasses that we built Mirror to work with.
 
 The backend is written in TypeScript via NextJS and handles interactions with both the smart glasses client and the web interface. Using ElasticSearch, Mistral AI, Vercel’s NextJS, and Codeium’s Windsurf, we created an intuitive interface to interact with your thoughts throughout the day.
+
+Furthermore, visualizing the relationships between memories is made easy and beautiful via Mirror’s 3-Dimensional memory map which displays latent connections between memories. Each edge and connected component tells a story and provides insights into the relationships between your experiences.
+
+The best part – all of this is generated via our processing pipeline in real time as you talk! Throughout the entire day, Mirror will always be up to date with your latest memory insights.
+
 
 ![Cover photo](https://github.com/kevinzhu12/treehacks-glasses/blob/main/public/readme/notes_sc.png)
 
