@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Mirror 
 
-## Getting Started
+> Reflecting on your past work, relationships, and learning has never been easier. Mirror turns your minute-to-minute into a comprehensive and indexable knowledge base in the form of a journal.
 
-First, run the development server:
+Mirror is an AI-powered app compatible on all AugmentOS-enabled smart glasses which transcribes your conversations and generates actionable insights and summaries tuned for reflection in real time. Our processing agents will automatically update on the Mirror web interface as you speak, intelligently picking out the most appropriate points to give a well-rounded overview of your day, extracting todos, a general snapshot of your day, and important reflection questions.
+
+*by: Sarah Su, Claire Wang, Kevin Zhu, Sanjith Udupa*
+
+**Watch our video:**
+
+[![Video](https://img.youtube.com/vi/3FzmbTFD_9I/maxresdefault.jpg)](https://www.youtube.com/watch?v=3FzmbTFD_9I)
+
+
+Mirror is built in 3 parts:
+
+The AugmentOS Smart Glasses Client is an Android application written in Java which handles the interface with the smart glasses – handling both the voice transcription and relaying text back to the user via the display. Shoutout to the [Mentra](https://mentra.glass/) team for providing mentorship and lending us the [Even Realities G1](https://www.evenrealities.com/g1) Glasses that we built Mirror to work with.
+
+The backend is written in TypeScript via NextJS and handles interactions with both the smart glasses client and the web interface. Using ElasticSearch, Mistral AI, Vercel’s NextJS, and Codeium’s Windsurf, we created an intuitive interface to interact with your thoughts throughout the day.
+
+Link to [Android app repo](https://github.com/sarahjsu/tree_augmentos).
+
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
